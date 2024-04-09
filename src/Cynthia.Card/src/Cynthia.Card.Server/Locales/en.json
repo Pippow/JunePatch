@@ -2953,7 +2953,7 @@
         },
         "70032": {
             "Name": "Gascon",
-            "Info": "Deploy: choose a row, Move all units on both sides of it to random rows and Damage self by 2 for each unit moved.\nWhen in your hand or deck, Boost self by 1 whenever a unit moves during your turn.",
+            "Info": "Deploy: choose a row, Move all units on both sides of it to random rows and Damage self by 2 for each unit moved.\nWhen in your hand or deck, Boost self by 1 whenever a unit moves.",
             "Flavor": "“Th' Strays of Spalla – 'tis you who lead them? 'Tis you they call the Duke of Dogs?”"
         },
         "70033": {
@@ -3122,7 +3122,7 @@
             "Flavor": "破译梦境中的过去和未来是非常困难的，即使对大师也是如此。"
         },
         "70092": {
-            "Name": "SvalblodBrawler",
+            "Name": "Svalblod Brawler",
             "Info": "Deploy: Damage an enemy by 4,if it is under a Hazard,deal 8 Damage instead.",
             "Flavor": "史凯利格容不下罪犯和无赖……他们的罪行必须偿还."
         },
@@ -3223,7 +3223,7 @@
         },
         "70112": {
             "Name": "Primal Savagery",
-            "Info": "Deal 4 Damage to an ally, then play a Bronze Cultist card from your deck, then strengthen the unit played by 2.",
+            "Info": "Deal 3 Damage to an ally, then play a Bronze Cultist card from your deck, then strengthen the unit played by 2.",
             "Flavor": ""
         },
         "70113": {
@@ -3258,7 +3258,7 @@
         },
         "70119": {
             "Name": "Thaw",
-            "Info": "Boost a random ally by 2.\nRepeat once, then repeat this ability for each card you have played this turn.",
+            "Info": "Boost a random ally by 2.\nRepeat once, then repeat this ability for each card you have played from your deck this round.",
             "Flavor": "它带来了春天，也带来了战争。"
         },
         "70121": {
@@ -3358,12 +3358,12 @@
         },
         "70140": {
             "Name": "Dryad Grovekeeper",
-            "Info": "Transform a Bronze or Silver ally into a copy of this unit and keep base Strength,then Boost all other allies by 1 with lower.",
+            "Info": "Transform a Bronze or Silver ally into a copy of this unit and keep base Strength,then Boost all other allies with lower power by 1..",
             "Flavor": "真的吗？布洛克莱昂的花朵一年绽开七次？这怎么可能呢？"
         },
         "70141": {
             "Name": "Queen Adalia",
-            "Info": "Spawn an Cintra card. If there are only Northern realm cards in your starting deck, add one Bronze Cintra cards each to your deck.",
+            "Info": "Spawn an Cintra card. If there are only Northern realm cards in your starting deck, add one of each Bronze Cintra cards to your deck.",
             "Flavor": "辛特拉女王艾达莉亚皱皱眉头就能升起吊桥。要是她挥挥手呢……真不敢想会发生什么。"
         },
         "70142": {
@@ -3418,7 +3418,7 @@
         },
         "70152": {
             "Name": "Van Moorlehem's Cupbearer",
-            "Info": "On turn end, if there is no Gold unit on the opposite side, gain 1 Boost.Companians",
+            "Info": "On turn end, if there is no Gold unit on the opposite side, Boost self by 1.",
             "Flavor": "我的拿手菜？生肉酱。什么肉？啊，那就得看主人的心情了……"
         },
         "70153": {
@@ -3493,21 +3493,21 @@
         },
         "70167": {
             "Name": "Zoltans Company",
-            "Info": "Return 3 Silver/Bronze Dwarf unit from graveyard to your deck,then play a Bronze Dwarf unit from deck. When in graveyard, whenever you play a Dwarf unit, give it 1 Armors and Boost it by 1.",
+            "Info": "Return 3 Silver/Bronze Dwarf unit from your graveyard to your deck,then play a Bronze Dwarf unit from deck. When in graveyard, whenever you play a Dwarf unit, give it 1 Armors and Boost it by 1.",
             "Flavor": ""
         },
         "80001": {
-            "Name": "Auberon:King",
+            "Name": "Auberon: King",
             "Info": "He'll drop a white frost.",
             "Flavor": "The end of one world can be the beginning of another."
         },
         "80002": {
-            "Name": "Auberon:Invader",
+            "Name": "Auberon: Invader",
             "Info": "He will awaken the Wild Hunt.",
             "Flavor": "If they will not submit, they shall be driven out!"
         },
         "80003": {
-            "Name": "Auberon:Conqueror",
+            "Name": "Auberon: Conqueror",
             "Info": "He will conquer the world.",
             "Flavor": "After having lived over six hundred and fifty years, little remains to excite."
         },
