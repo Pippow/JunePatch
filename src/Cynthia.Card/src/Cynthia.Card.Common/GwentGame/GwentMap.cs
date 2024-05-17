@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 99);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 100);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -3353,12 +3353,12 @@ namespace Cynthia.Card
                 }
             },
             {
-                "23011",//尼斯里拉
+                "23011",//尼斯里拉 Nithral
                 new GwentCard()
                 {
                     CardId ="23011",
                     Name="尼斯里拉",
-                    Strength=7,
+                    Strength=3,
                     Group=Group.Silver,
                     Faction = Faction.Monsters,
                     CardUseInfo = CardUseInfo.MyRow,
@@ -14019,6 +14019,26 @@ namespace Cynthia.Card
                     Flavor = "",
                     Info = "将墓场3张银色/铜色矮人牌返回牌组，随后打出1张铜色矮人牌。位于墓场时，使己方打出的矮人单位获得1点护甲与1点增益。",
                     CardArtsId = "d19230000",
+                }
+            },
+            {
+                "70168",//Caranthir Golden Child
+                new GwentCard()
+                {
+                    CardId ="23011",
+                    Name="XXX",
+                    Strength=3,
+                    Group=Group.Gold,
+                    Faction = Faction.Monsters,
+                    CardUseInfo = CardUseInfo.MyRow,
+                    CardType = CardType.Unit,
+                    IsDoomed = false,
+                    IsCountdown = false,
+                    IsDerive = false,
+                    Categories = new Categorie[]{ Categorie.WildHunt},
+                    Flavor = "XXXX",
+                    Info = "XXXXXX",
+                    CardArtsId = "d21950000",
                 }
             },
         };
