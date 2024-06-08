@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 99);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 100);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -2786,7 +2786,7 @@ namespace Cynthia.Card
                     Categories = new Categorie[]{ Categorie.Leader,Categorie.Vodyanoi},
                     Flavor = "永世长眠者未必永恒死亡，在奇妙的时代死亡亦将消逝。",
                     Info = "生成“蔽日浓雾”或“倾盆大雨”。",
-                    CardArtsId = "13110300",
+                    CardArtsId = "202313",
                 }
             },
             {
@@ -2866,7 +2866,7 @@ namespace Cynthia.Card
                     Categories = new Categorie[]{ Categorie.Leader,Categorie.Vampire},
                     Flavor = "没有谁知道暗影长者的真实年龄，连高阶吸血鬼们也不知情。他们唯一清楚的是，无论如何也不能违背他的意愿。",
                     Info = "部署：汲食1个单位一半的战力。",
-                    CardArtsId = "20005500",
+                    CardArtsId = "203263",
                 }
             },
             {
