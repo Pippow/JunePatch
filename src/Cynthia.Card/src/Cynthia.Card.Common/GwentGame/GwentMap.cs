@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 99);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 100);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -829,7 +829,7 @@ namespace Cynthia.Card
                 {
                     CardId ="12032",
                     Name="希里：新星",
-                    Strength=1,
+                    Strength=22,
                     Group=Group.Gold,
                     Faction = Faction.Neutral,
                     CardUseInfo = CardUseInfo.MyRow,
@@ -839,7 +839,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[]{ Categorie.Cintra,Categorie.Witcher,Categorie.Doomed},
                     Flavor = "吉薇艾儿无法掌控自己所拥有的非凡力量。对她自己，对其他人来说，她都是个危险。除非她学会控制这份力量，否则不能把她放出来。",
-                    Info = "若每张铜色牌在己方初始牌组中刚好有2张，则基础战力变为22点。",
+                    Info = "若每张铜色牌在己方初始牌组中刚好有2张，则基础战力变为23。",
                     CardArtsId = "20162600",
                 }
             },
