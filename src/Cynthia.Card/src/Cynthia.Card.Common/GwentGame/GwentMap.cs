@@ -14021,6 +14021,26 @@ namespace Cynthia.Card
                     CardArtsId = "d19230000",
                 }
             },
+            {
+                "70168",//齐齐摩工兵
+                new GwentCard()
+                {
+                    CardId ="70168",
+                    Name = "齐齐摩工兵",
+                    Strength = 3,
+                    Group = Group.Copper,
+                    Faction = Faction.Monsters,
+                    CardUseInfo = CardUseInfo.MyRow,
+                    CardType = CardType.Unit,
+                    IsDoomed = false,
+                    IsCountdown = false,
+                    IsDerive = false,
+                    Categories = new Categorie[]{ Categorie.Insectoid},
+                    Flavor = "",
+                    Info = "xxxxxx",
+                    CardArtsId = "d19140000",
+                }
+            },
         };
     }
 }
