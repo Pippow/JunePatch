@@ -2679,7 +2679,7 @@
         },
         "64005": {
             "Name": "Berserker Maruder",
-            "Info": "Rozmieszczenie: Wzmocnij tę jednostkę o 1 za każdego rannego lub Przeklętego sojusznika.",
+            "Info": "Rozmieszczenie: Wzmocnij te jednostkę o 1 za każdego rannego sojusznika, następnie wzmocnij ją o 1 za każdego przeklętego sojusznika.",
             "Flavor": "Nie lekceważ ich, nawet młodsze osobniki są niebezpieczne."
         },
         "64006": {
@@ -3264,7 +3264,7 @@
         },
         "70112": {
             "Name": "Pierwotna Dzicz",
-            "Info": "Deal 4 Damage to an ally, then play a Bronze Cultist card from your deck, then strengthen the unit played by 2.",
+            "Info": "Zadaj 4pkt obrażeń sojusznikowi, następnie zagraj jedną z dwóch brązowych jednostek kultystów z Twojej talii. Wzmocnij ją o 1.",
             "Flavor": ""
         },
         "70113": {
