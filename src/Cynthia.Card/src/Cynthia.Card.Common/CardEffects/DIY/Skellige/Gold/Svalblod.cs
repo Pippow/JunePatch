@@ -24,13 +24,17 @@ namespace Cynthia.Card
             {
                 return 0;
             }
-            foreach (var card in handcards)
+            foreach (var x in handcards)
                 {
-                    if (card.CardPoint() >=3)
-                        await card.Effect.Damage(2, Card);
-                        await card.Effect.Strengthen(2, Card);
-                    if (card.CardPoint() ==2)
-                    await card.Effect.Damage(1, Card);
+                    if (x.Status.Strength == 2)
+                        {
+                            await x.Effect.Damage(1, Card);
+                        }
+                    if (x.Status.Strength >= 3)
+                        {
+                        await x.Effect.Damage(2, Card);
+                        await x.Effect.Strengthen(2, Card);
+                        }
                 } 
             return 0;
         }
