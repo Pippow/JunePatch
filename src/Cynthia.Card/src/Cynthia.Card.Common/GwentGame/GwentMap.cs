@@ -9788,7 +9788,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[]{ Categorie.Cursed,Categorie.Soldier,Categorie.Cultist},
                     Flavor = "把汤乖乖喝完，不然狂战士就会过来，把你给掳走。",
-                    Info = "场上每有一个受伤单位则获得1点增益，若该受伤单位为“诅咒生物”，则获得2点增益。",
+                    Info = "场上每有一个受伤单位或“诅咒生物”则获得1点增益，若该受伤单位为“诅咒生物”，则获得2点增益。",
                     CardArtsId = "15230200",
                 }
             },
@@ -11850,7 +11850,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[] { Categorie.Special,Categorie.Organic},
                     Flavor = "",
-                    Info = "对一个非“诅咒生物”友方单位造成3点伤害，随后检视牌组中2张“呓语”牌，选择打出其中1张，并使其获得1点强化。",
+                    Info = "对一个非“呓语”友方单位造成3点伤害，随后检视牌组中2张“呓语”牌，选择打出其中1张，并使其获得1点强化。",
                     CardArtsId = "d17750000",
                 }
             },
