@@ -12,18 +12,26 @@ namespace Cynthia.Card
         {
             var result = await Game.GetSelectPlaceCards(Card, range: 1);
             if (result.Count <= 0) return 0;
-                foreach (var card in result.Single().GetRangeCard(1).ToList())
-                    {
-                        if (card.Status.HealthStatus >= 0)
-                        {
-                            await card.Effect.Damage(2, Card);
-                        }
-                        else if (card.Status.HealthStatus < 0)
-                        {
-                        await card.Effect.ToCemetery(CardBreakEffectType.Scorch);
-                        }
-                    }
+                if (result.Status.HealthStatus >= 0)
+                {
+                    await target.Effect.Damage(2, Card);
+                }
+                else if (target.Status.HealthStatus < 0)
+                {
+                    await target.Effect.ToCemetery(CardBreakEffectType.Scorch);
+                }
             return 0;
+            // WIP
+            {
+            var result = await Game.GetSelectPlaceCards(Card, range: 1);
+            if (result.Count <= 0) return 0; 
+            while (result.Status.HealthStatus >= 0)           
+                {
+                    await target.Effect.Damage(2, Card, BulletType.FireBall);
+                }
+            return 0;
+            }
         }
+
     }
 }
