@@ -2527,7 +2527,7 @@
         },
         "62003": {
             "Name": "Vabjorn",
-            "Info": "Deploy: Deal 2 Damage to an enemy and its adjacent units.\nIf a unit was already Damaged, destroy it instead.",
+            "Info": "Deploy: select a unit, if it is damaged, destroy it, otherwise damage it by 2 unitil it is damaged.",
             "Flavor": "为了斯瓦勃洛！"
         },
         "62004": {
@@ -3392,7 +3392,7 @@
         },
         "70134": {
             "Name": "Crow Clan Druid",
-            "Info": "On turn end, if there is no Crow on this row, spawn a Crow on left side.\n(Crow; 2 Strength. Deathwish: Deal 3 Damage to a random enemy)",
+            "Info": "On turn end, if there is no Crow on this row, spawn a Crow on the right side.\n(Crow; 2 Strength. Deathwish: Deal 3 Damage to a random enemy)",
             "Flavor": "先贤声称动物愚昧无知——纯属胡说八道。"
         },
         "70135": {

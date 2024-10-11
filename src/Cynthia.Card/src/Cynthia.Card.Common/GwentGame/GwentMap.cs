@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 105);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 106);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -9097,7 +9097,7 @@ namespace Cynthia.Card
                 {
                     CardId ="62003",
                     Name="维伯约恩",
-                    Strength=8,
+                    Strength=11,
                     Group=Group.Gold,
                     Faction = Faction.Skellige,
                     CardUseInfo = CardUseInfo.MyRow,
@@ -13049,7 +13049,7 @@ namespace Cynthia.Card
                 {
                     CardId ="70099",
                     Name="斯瓦勃洛",
-                    Strength=11,
+                    Strength=9,
                     Group=Group.Leader,
                     Faction = Faction.Skellige,
                     CardUseInfo = CardUseInfo.MyRow,
