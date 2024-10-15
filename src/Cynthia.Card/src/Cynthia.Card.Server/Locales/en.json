@@ -2527,7 +2527,7 @@
         },
         "62003": {
             "Name": "Vabjorn",
-            "Info": "Deploy: select a unit, if it is damaged, destroy it, otherwise damage it by 2 untill it is damaged.",
+            "Info": "Deploy: select a unit, if it is damaged, destroy it, otherwise damage it by 2 until it is damaged.",
             "Flavor": "为了斯瓦勃洛！"
         },
         "62004": {
