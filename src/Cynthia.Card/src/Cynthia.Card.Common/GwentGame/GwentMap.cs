@@ -9107,7 +9107,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[]{ Categorie.Cursed,Categorie.Cultist},
                     Flavor = "为了斯瓦勃洛！",
-                    Info = "“部署： 对敌人及其相邻单位造成 2 点伤害。如果某个单位已经受到伤害，则摧毁该单位。",
+                    Info = "选择一个敌方单位，如果其已经受伤，则直接摧毁它，否则对其造成2点伤害直至其受伤。",
                     CardArtsId = "20002800",
                 }
             },
@@ -13420,7 +13420,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[]{ },
                     Flavor = "先贤声称动物愚昧无知——纯属胡说八道。",
-                    Info = "回合结束时，若同排没有乌鸦则在左侧生成一个乌鸦。",
+                    Info = "回合结束时，若同排没有乌鸦，则在右侧生成一个乌鸦。",
                     CardArtsId = "d20110000",
                 }
             },

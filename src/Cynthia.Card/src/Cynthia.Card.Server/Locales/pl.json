@@ -2527,7 +2527,7 @@
         },
         "62003": {
             "Name": "Vabjorn",
-            "Info": "Rozmieszczenie: Zadaj 2 pkt obrażeń wrogowi i sąsiadującym z nim jednostkom. Jeśli jednostka była już uszkodzona, zniszcz ją.",
+            "Info": "Rozmieszczenie: Wybierz jednostke. Jeśli jest zraniona zniszcz ją. Jeśli nie zadawaj 2pkt obrażeń aż będzie zraniona.",
             "Flavor": "Krew dla Svalbloda! Czaszki na jego tron!"
         },
         "62004": {
@@ -3391,8 +3391,8 @@
             "Flavor": "只要他继续为正义而战，骑士团和烈焰就永不熄灭。"
         },
         "70134": {
-            "Name": "Crow Clan Druid",
-            "Info": "On turn end, if there is no Crow on this row, spawn a Crow on left side.",
+            "Name": "Adeptka Klanu Kruka",
+            "Info": "Rozmieszczenie: Na koniec tury, jeśli w tym rzędzie nie ma wrony stwórz wrone po prawej stronie (Wrona; 2 siły; Zemsta: Zadaj 3pkt obrażeń losowemu wrogowi)",
             "Flavor": "先贤声称动物愚昧无知——纯属胡说八道。"
         },
         "70135": {
