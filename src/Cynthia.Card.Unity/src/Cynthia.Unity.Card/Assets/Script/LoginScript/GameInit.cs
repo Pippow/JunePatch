@@ -21,7 +21,11 @@ public class GameInit : MonoBehaviour
     public Text NowVersionText;
     public Text LatestVersionText;
     public Text NotesText;
+    public Text VersionText;
     public RectTransform NotesContext;
+    private string UpToDateVersion;
+    private string CurrentVersion="1.0.0";
+    public GameObject Download_Button;
 
     private GwentClientService _gwentClientService;
     private LocalizationService _translator;
@@ -32,6 +36,10 @@ public class GameInit : MonoBehaviour
         _translator = DependencyResolver.Container.Resolve<LocalizationService>();
         ConfigureGame();
         LoadServerMessage();
+    }
+    public void OpenDownloadLink()
+    {
+        Application.OpenURL("https://drive.google.com/drive/folders/1rQgMARdEzL1Tn8GC3XIEcsL1Zcv0IYbu?usp=sharing");
     }
 
     public void ExitClick()
@@ -69,6 +77,23 @@ public class GameInit : MonoBehaviour
                     NotesContext.sizeDelta = new Vector2(NotesContext.sizeDelta.x, NotesText.GetComponent<RectTransform>().sizeDelta.y);
                 }
             }
+        }
+        try
+        {
+            UpToDateVersion = (await _gwentClientService.GetLatestClientVersion());
+        }
+        catch
+        {
+            UpToDateVersion = "Unknown";
+        }
+        VersionText.text = $"{_translator.GetText("Local_version")}: {CurrentVersion}\n{_translator.GetText("Latest_version")}: {UpToDateVersion}";
+        if (CurrentVersion != UpToDateVersion)
+        {
+            Download_Button.SetActive(true);
+        }
+        else 
+        {
+            Download_Button.SetActive(false);
         }
         try
         {
