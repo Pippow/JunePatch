@@ -490,6 +490,13 @@ When other players are available, player matchmaking will be prioritized. Add #f
 ;
 
         }
+
+        public async Task<string> GetDownloadLink(string connectionId)
+        {
+            await Task.CompletedTask;
+            return "https://drive.google.com/drive/folders/1rQgMARdEzL1Tn8GC3XIEcsL1Zcv0IYbu?usp=sharing";
+        }
+
         public async Task<string> GetLatestClientVersion(string connectionId)
         {
             await Task.CompletedTask;
