@@ -167,6 +167,252 @@
         "IngameMenu_RoundWonTitle": "YOU WON THE ROUND!",
         "IngameMenu_RoundLostTitle": "YOU LOST THE ROUND!",
         "IngameMenu_RoundDrawTitle": "DRAW!",
+        "TrinketsMenu_SetAvatarButton": "Set Avatar",
+        "TrinketsMenu_SetBorderButton": "Set Border",
+        "TrinketsMenu_SetTitleButton": "Set Title",
+        "TrinketsMenu_TrinketOwned": "Owned",
+        "TrinketsMenu_TrinketNotOwned": "Locked",
+        "TrinketsMenu_Rank": "Rank",
+        "TrinketsMenu_Trinkets": "Trinkets",
+        "TrinketsMenu_Avatars": "Avatars",
+        "TrinketsMenu_Borders": "Borders",
+        "TrinketsMenu_Titles": "Titles",
+        "NoAvatarName": "No Avatar",
+        "NoAvatarDescription": "Unlocked by default.",
+        "GeraltOfRiviaName": "Geralt of Rivia",
+        "GeraltOfRiviaDescription": "Unlocked by default.",
+        "Geralt1": "Hm. Bet this’ll come as a surprise.",
+        "Geralt2": "Dammit… don’t like the look of this.",
+        "Geralt3": "Step away. While you can.",
+        "Geralt4": "Wrong! Another mistake.",
+        "Geralt5": "Not bad. Not bad at all.",
+        "Geralt6": "Thanks.",
+        "TrissMerigoldName": "Triss Merigold",
+        "TrissMerigoldDescription": "Unlocked by default.",
+        "Triss1": "Watch this!",
+        "Triss2": "Oh Dammit!",
+        "Triss3": "Better off giving up now!",
+        "Triss4": "Crap move.",
+        "Triss5": "Gotta hand it to you - good work.",
+        "Triss6": "Thaanks.",
+        "YenneferName": "Yennefer of Vengerberg",
+        "YenneferDescription": "Unlocked by default.",
+        "Yennefer1": "You might find this shocking.",
+        "Yennefer2": "Demons take you!",
+        "Yennefer3": "You shall regret standing in my way!",
+        "Yennefer4": "Novice mistake.",
+        "Yennefer5": "Cunning play.",
+        "Yennefer6": "Thank you.",
+        "CiriName": "Ciri",
+        "CiriDescription": "",
+        "Ciri1": "Watch closely. You might just learn something.",
+        "Ciri2": "Curses.",
+        "Ciri3": "Run while you’re still able!",
+        "Ciri4": "A grave error.",
+        "Ciri5": "Not too shabby, not shabby at all.",
+        "Ciri6": "Thank you! That was very kind.",
+        "DandelionName": "Dandelion",
+        "DandelionDescription": "",
+        "Dandelion1": "Observe a master in action.",
+        "Dandelion2": "What? No! How?!",
+        "Dandelion3": "Got no idea the mess you just made for yourself...",
+        "Dandelion4": "Pff, rookie mistake.",
+        "Dandelion5": "That... was actually rather impressive. Congratulations.",
+        "Dandelion6": "Thanks, my friend!",
+        "Zoltan_Animal_TamerName": "Zoltan Animal Tamer",
+        "Zoltan_Animal_TamerDescription": "",
+        "Zoltan1": "Hohoho, things're aboot tae get spicy!",
+        "Zoltan2": "Duvvelsheyss!",
+        "Zoltan3": "Gonna kick ye so hard in the arse, ye'll taste boot leather!",
+        "Zoltan4": "Hm, not quite what I was aimin' for.",
+        "Zoltan5": "Ha! How aboot that!",
+        "Zoltan6": "Thanks for that, pal!",
+        "YenneferFuryName": "Yennefer Fury",
+        "YenneferFuryDescription": "",
+        "Vernon_RocheName": "Vernon Roche",
+        "Vernon_RocheDescription": "",
+        "Roche1": "We shall strike swiftly and precisely.",
+        "Roche2": "Why you rotten little cu--",
+        "Roche3": "Cut them down to a man!",
+        "Roche4": "Bad. Very bad.",
+        "Roche5": "My, my. I'm actually impressed.",
+        "Roche6": "Thanks.",
+        "TrissSorceressName": "Triss Sorceress",
+        "TrissSorceressDescription": "Reach Rank 18 in Season One.",
+        "RegisName": "Regis",
+        "RegisDescription": "",
+        "Regis1": "Pay attention, now - I wager this you’ll want to see.",
+        "Regis2": "Hm, not good at all...",
+        "Regis3": "Do not mistake my manners for weakness.",
+        "Regis4": "We all err at times. Even I do.",
+        "Regis5": "Bravo! Well done!",
+        "Regis6": "You’ve my utmost gratitude.",
+        "RadovidName": "King Radovid Vth",
+        "RadovidDescription": "",
+        "Radovid1": "Check and mate.",
+        "Radovid2": "Enough of this! Enough, I said!",
+        "Radovid3": "You shall lose your head for that!",
+        "Radovid4": "A novice's misstep.",
+        "Radovid5": "Hm, I underestimated you.",
+        "Radovid6": "I value your service.",
+        "PhoenixName": "Phoenix",
+        "PhoenixDescription": "Receive GG 200 times.",
+        "Phoenix1": "...",
+        "Phoenix2": "...",
+        "Phoenix3": "...",
+        "Phoenix4": "...",
+        "Phoenix5": "...",
+        "Phoenix6": "...",
+        "OdrinName": "Odrin",
+        "OdrinDescription": "",
+        "Odrin1": "Gonna go now… or should I shtay?",
+        "Odrin2": "Oh, you shnivelin' shack o'… sho that'sh how it'sh gonna be?!",
+        "Odrin3": "I'm gonna kick yer arsh so hard…",
+        "Odrin4": "Did I want that? Ugh… don't recall…",
+        "Odrin5": "Ehh? How'd… *hic!*… how'd you do that?",
+        "Odrin6": "Oooh… fanks, mate!",
+        "LethoName": "Letho of Gullet",
+        "LethoDescription": "",
+        "Letho1": "Now watch closely.",
+        "Letho2": "Hrmph… not good.",
+        "Letho3": "Gonna be too easy, this.",
+        "Letho4": "One mistake after another.",
+        "Letho5": "You're not that bad.",
+        "Letho6": "Hm, thanks.",
+        "King_BranName": "King Bran",
+        "King_BranDescription": "",
+        "Bran1": "With my shield or on it!",
+        "Bran2": "Sirens eat your innards!",
+        "Bran3": "Ye're on thin ice…",
+        "Bran4": "A grave error…",
+        "Bran5": "Ha! You're worth the trouble!",
+        "Bran6": "The Isles thank ye.",
+        "IorvethScarfName": "Iorveth Scarf",
+        "IorvethScarfDescription": "",
+        "IorvethName": "Iorveth",
+        "IorvethDescription": "",
+        "Iorveth1": "Not bravery, but brains. That’s how you win.",
+        "Iorveth2": "Bloede arse!",
+        "Iorveth3": "Lackeys like you we coat in honey, then tie you down on an anthill.",
+        "Iorveth4": "Bad move.",
+        "Iorveth5": "Well, well. Impressive.",
+        "Iorveth6": "You’ve my gratitude.",
+        "Imlerith_UnmaskedName": "Imlerith Unmasked",
+        "Imlerith_UnmaskedDescription": "Finish Season 1 in the top 10 players.",
+        "ImlerithName": "Imlerith",
+        "ImlerithDescription": "",
+        "Imlerith1": "Raaargh!",
+        "Imlerith2": "Aaargh!",
+        "Imlerith3": "Stand and fight!",
+        "Imlerith4": "Something amiss?",
+        "Imlerith5": "Who taught you to play like this?",
+        "Imlerith6": "Let it be so.",
+        "Geralt_IntoxicatedName": "Geralt Intoxicated",
+        "Geralt_IntoxicatedDescription": "",
+        "FrancescaName": "Francesca",
+        "FrancescaDescription": "",
+        "Francesca1": "The Aen Seidhe could surprise you at any time.",
+        "Francesca2": "A d'yaebl aep arse!",
+        "Francesca3": "You will vanish! We shall cast you into oblivion!",
+        "Francesca4": "Squaess'me.",
+        "Francesca5": "Splendid maneuver.",
+        "Francesca6": "You have my thanks.",
+        "Maerolorn_Name": "Maerolorn",
+        "Maerolorn_Description": "",
+        "Maerolorn1": "...",
+        "Maerolorn2": "...",
+        "Maerolorn3": "...",
+        "Maerolorn4": "...",
+        "Maerolorn5": "...",
+        "Maerolorn6": "...",
+        "Eredin_UnmaskedName": "Eredin Unmasked",
+        "Eredin_UnmaskedDescription": "",
+        "Eredin1": "You know well how this will end.",
+        "Eredin2": "Bloede verin!",
+        "Eredin3": "You shall perish, worm.",
+        "Eredin4": "Grave error.",
+        "Eredin5": "You would make a good slave.",
+        "Eredin6": "All is as it should be.",
+        "Dandelionthewitcher2Name": "Dandelion The Witcher 2",
+        "Dandelionthewitcher2Description": "Reach Rank 13 in Season One.",
+        "DagonName": "Dagon",
+        "DagonDescription": "",
+        "Dagon1": "Hai y-cgof'nn! (Now, my children!)",
+        "Dagon2": "Mnahn'yar! (Wasted time!)",
+        "Dagon3": "Or'azath… (Strange…)",
+        "Dagon4": "mgehye'btnk. (Well Played.)",
+        "Dagon5": "Vulgtmnah mgehye'btnk. (Well Played.)",
+        "Dagon6": "(Our pact is sealed.)",
+        "ClassicGeraltName": "Classic Geralt",
+        "ClassicGeraltDescription": "Partecipate in Season One.",
+        "CirALtName": "Ciri Elder Blood",
+        "Taunt1": "WATCH THIS",
+        "Taunt2": "DAMMIT!",
+        "Taunt3": "YOU'RE GOING DOWN",
+        "Taunt4": "BAD MOVE",
+        "Taunt5": "WELL PLAYED",
+        "Taunt6": "THANKS",
+        "CirALtDescription": "",
+        "NOVICEName": "NOVICE",
+        "NOVICEDescription": "Reach Rank 3.",
+        "APPRENTICEName": "APPRENTICE",
+        "APPRENTICEDescription": "Reach Rank 6.",
+        "JOURNEYMANName": "JOURNEYMAN",
+        "JOURNEYMANDescription": "Reach Rank 9.",
+        "ADEPTName": "ADEPT",
+        "ADEPTDescription": "Reach Rank 12.",
+        "CARDSHARPName": "CARDSHARP",
+        "CARDSHARPDescription": "Reach Rank 15.",
+        "MASTERName": "MASTER",
+        "MASTERDescription": "Reach Rank 18.",
+        "GRANDMASTERName": "GRANDMASTER",
+        "GRANDMASTERDescription": "Reach Rank 21.",
+        "MAN-AT-ARMSName": "MAN-AT-ARMS",
+        "MAN-AT-ARMSDescription": "Finish Season One in the top 100 players.",
+        "MERCENARYName": "MERCENARY",
+        "BOUNTYHUNTERDescription": "Finish Season One in the top 50 players.",
+        "BOUNTYHUNTERName": "BOUNTY HUNTER",
+        "BOUNTY HUNTERDescription": "Finish Season One in the top 20 players.",
+        "VETERANName": "VETERAN",
+        "VETERANDescription": "Finish Season One in the top 10 players.",
+        "CARDSMITHName": "CARDSMITH",
+        "CARDSMITHDescription": "Unlocked by default.",
+        "CHAMPIONName": "CHAMPION",
+        "CHAMPIONDescription": "Finish Season One in the top 5 of Players.",
+        "HEROName": "HERO",
+        "HERODescription": "Finish Season One as the top player.",
+        "PIONEERName": "PIONEER",
+        "PIONEERDescription": "Partecipate in Season One.",
+        "GOODGAMERName": "GOOD GAMER",
+        "GOODGAMERDescription": "Receive GG 500 times.",
+        "Rank3borderName": "Rank 3",
+        "Rank3borderDescription": "Reach Rank 3.",
+        "Rank6borderName": "Rank 6",
+        "Rank6borderDescription": "Reach Rank 6.",
+        "Rank9borderName": "Rank 9",
+        "Rank9borderDescription": "Reach Rank 9.",
+        "Rank12borderName": "Rank 12",
+        "Rank12borderDescription": "Reach Rank 12.",
+        "Rank15borderName": "Rank 15",
+        "Rank15borderDescription": "Reach Rank 15.",
+        "Rank18borderName": "Rank 18",
+        "Rank18borderDescription": "Reach Rank 18.",
+        "Rank21borderName": "Rank 21",
+        "Rank21borderDescription": "Reach Rank 21.",
+        "Season1Border1Name": "Season 1 Border 1",
+        "Season1Border1Description": "Finish Season One in the top 100 players.",
+        "Season1Border2Name": "Season 1 Border 2",
+        "Season1Border2Description": "Finish Season One in the top 50 players.",
+        "Season1Border3Name": "Season 1 Border 3",
+        "Season1Border3Description": "Finish Season One in the top 20 players.",
+        "Season1Border4Name": "Season 1 Border 4",
+        "Season1Border4Description": "Finish Season One in the top 10 players.",
+        "Season1Border5Name": "Season 1 Border 5",
+        "Season1Border5Description": "Finish Season One in the top 5 of Players.",
+        "Season1Border6Name": "Season 1 Border 6",
+        "Season1Border6Description": "Finish Season One as the top player.",
+        "G_PhoenixName": "Phoenix Border",
+        "G_PhoenixDescription": "Receive GG 100 times.",
         "IngameMenu_GGButton": "Send GG!",
         "GG_Message1": "Good Game! Your opponent ",
         "GG_Message2": " Sent GG!",
@@ -264,6 +510,13 @@
         "CardTag_Raid": "Raid",
         "CardTag_Crime": "Crime",
         "CardTag_Test": "Test",
+        "ai0_name": "Geralt and Ciri",
+        "ai1_name": "Fresh Recruit",
+        "ai2_name": "Avallac'h",
+        "ai3_name": "King Oberon",
+        "ai4_name": "Gascon: Iron Falcon",
+        "ai5_name": "Reaver Hunters",
+        "Surrender_button": "Surrender",
         "ShupeKnight_1_Strengthen": "Strengthen self to 25.",
         "ShupeKnight_2_Resilience": "Resilient.",
         "ShupeKnight_3_Duel": "Duel an enemy.",
@@ -319,7 +572,9 @@
         "Sihil_2_DamageEven": "Deal 3 Damage to all enemies with even Power.",
         "Sihil_3_PlayUnit": "Play a random Bronze or Silver unit from your deck.",
         "VriheddSaboteur_1_RandomItem": "Play a random Bronze Item",
-        "VriheddSaboteur_2_STItem": "Chosse and play a Scoia'tael Bronze Item"
+        "VriheddSaboteur_2_STItem": "Chosse and play a Scoia'tael Bronze Item",
+        "Gael_1_Damage2Units": "Deal 5 Damage to two enemy units each.",
+        "Gael_1_Damage1Unit": "Damage an enemy by 8."
     },
     "CardLocales": {
         "12001": {
@@ -394,7 +649,7 @@
         },
         "12015": {
             "Name": "Zoltan: Scoundrel",
-            "Info": "Deploy: Spawn a Duda: Agitator, or Duda: Campanion. \n(Duda: Agitator; 1 Strength. Deal 2 Damage to 2 units on each side)\n(Duda: Companion; 1 Strength. Boost 2 units on each side by 2)",
+            "Info": "Deploy: Spawn a Duda: Agitator, or Duda: Campanion.",
             "Flavor": "Apologies. My exotic pet's a clever birdie, but a wee bit lewd. Paid ten thalers for the beaute."
         },
         "12016": {
@@ -439,7 +694,7 @@
         },
         "12024": {
             "Name": "Yennefer",
-            "Info": "Deploy: Spawn Unicorn or Chironex.\n(Unicorn; 1 Strength. Boost all other units by 2)\n(Chironex; 4 Strength. Deal 2 Damage to all other units)",
+            "Info": "Deploy: Spawn Unicorn or Chironex.",
             "Flavor": "Magic is Chaos, Art and Science. It is a curse, a blessing and a progression."
         },
         "12025": {
@@ -554,7 +809,7 @@
         },
         "13005": {
             "Name": "Germain Piquant",
-            "Info": "Deploy: Spawn 2 Cows on each side of this unit.\n(Cow; 1 Strength)",
+            "Info": "Deploy: Spawn 2 Cows on each side of this unit.",
             "Flavor": "The hero Toussaint needs, but not the one it deserves."
         },
         "13006": {
@@ -639,7 +894,7 @@
         },
         "13022": {
             "Name": "Prize-Winning Cow",
-            "Info": "Deathwish: Spawn a Chort on a random row.\n(Chort; 14 Strength)",
+            "Info": "Deathwish: Spawn a Chort on a random row.",
             "Flavor": "Mooooo."
         },
         "13023": {
@@ -654,7 +909,7 @@
         },
         "13025": {
             "Name": "Artefact Compression",
-            "Info": "Transform a Bronze or Silver unit into a Jade Figurine.\n(Jade Figurine; 2 Strength)",
+            "Info": "Transform a Bronze or Silver unit into a Jade Figurine.",
             "Flavor": ""
         },
         "13026": {
@@ -719,7 +974,7 @@
         },
         "13038": {
             "Name": "White Frost",
-            "Info": "Apply Biting Frost to a row and the one above it.\n(Every turn, on turn start, Damage the Lowest unit on the row by 2).",
+            "Info": "Apply Biting Frost to a row and the one above it.",
             "Flavor": "Behold Tedd Deireadh, the Final Age. The world destroyed by the White Frost."
         },
         "13039": {
@@ -739,7 +994,7 @@
         },
         "13042": {
             "Name": "Glorious Hunt",
-            "Info": "If losing, Spawn an Imperial Manticore.\nIf winning, Spawn Manticore Venom.\n(Imperial Manticore; 13 Strength)\n(Manticore Venom: Damage a unit by 13)",
+            "Info": "If losing, Spawn an Imperial Manticore.\nIf winning, Spawn Manticore Venom.",
             "Flavor": "By the gods' gonads, witcher, why'd you bring me this filth?! I want that beast's head! - that was a ploughin' figure of ploughin' speech!"
         },
         "13043": {
@@ -779,7 +1034,7 @@
         },
         "14006": {
             "Name": "Bloodcurdling Roar",
-            "Info": "Destroy an ally, then Spawn a Bear.\n(Bear; 11 Strength)",
+            "Info": "Destroy an ally, then Spawn a Bear.",
             "Flavor": ""
         },
         "14007": {
@@ -794,7 +1049,7 @@
         },
         "14009": {
             "Name": "First Light",
-            "Info": "Spawn Clear Skies or Rally. \n(Clear skies: Boost all Damaged allies under Hazards by 2 and clear all Hazards from your side)\n(Rally: Play a random Bronze unit from your deck)",
+            "Info": "Spawn Clear Skies or Rally.",
             "Flavor": ""
         },
         "14010": {
@@ -884,7 +1139,7 @@
         },
         "14027": {
             "Name": "Peasant Militia",
-            "Info": "Spawn 3 Peasants on a row.\n(Peasant; 3 Strength)",
+            "Info": "Spawn 3 Peasants on a row.",
             "Flavor": "We's the militia. We keep the peace."
         },
         "15001": {
@@ -1074,7 +1329,7 @@
         },
         "23005": {
             "Name": "Colossal Ifrit",
-            "Info": "Deploy: Spawn 3 Lesser Ifrits to the right of this unit.\n(Lesser Ifrit; 1 Strength; When Summoned, deal 1 Damage to a random enemy)",
+            "Info": "Deploy: Spawn 4 Lesser Ifrits to the right of this unit.",
             "Flavor": "Can't stand the heat? Then you don't stand a chance."
         },
         "23006": {
@@ -1209,7 +1464,7 @@
         },
         "24010": {
             "Name": "Arachas Behemoth",
-            "Info": "Whenever you Consume a unit, Spawn an Arachas Hatchling.\nRepeat up to 3 times.\n(Arachas Hatchling; 3 Strength; Summon all Arachas Drones on this row)",
+            "Info": "Whenever you Consume a unit, Spawn an Arachas Hatchling.\nRepeat up to 3 times.",
             "Flavor": "Like a cross between a crab, a spider… and a mountain."
         },
         "24011": {
@@ -1249,7 +1504,7 @@
         },
         "24018": {
             "Name": "Celaeno Harpy",
-            "Info": "Deploy: Spawn 2 Harpy Eggs to its left. (Harpy Egg; 1 Strength; When Consumed by another unit, Boost that unit by an additional 5. Deathwish: Spawn a Harpy Hatchling on a random row) (Harpy Hatchling; 1 Strength)",
+            "Info": "Deploy: Spawn 2 Harpy Eggs to its left.",
             "Flavor": "Common harpies feed on carrion. Celaeno harpies… they feed on dreams."
         },
         "24019": {
@@ -1349,7 +1604,7 @@
         },
         "24038": {
             "Name": "Moonlight",
-            "Info": "Spawn Full Moon, or Blood Moon.\n(Full Moon; Apply a Boon to an allied row that Boosts a random Beast or Vampire by 2 on turn start) \n(Blood Moon; Apply a Hazard to an enemy row that deals 2 Damage to all units on contact)",
+            "Info": "Spawn Full Moon, or Blood Moon.",
             "Flavor": ""
         },
         "25001": {
@@ -1369,7 +1624,7 @@
         },
         "25004": {
             "Name": "Harpy Egg",
-            "Info": "When Consumed by another unit, Boost that unit by an additional 5.\nDeathwish: Spawn a Harpy Hatchling on a random row.\n(Harpy Hatchling; 1 Strength)",
+            "Info": "When Consumed by another unit, Boost that unit by an additional 4.\nDeathwish: Spawn a Harpy Hatchling on a random row.",
             "Flavor": "A harpy egg omelet - a delicious delicacy, good sir. Quite dear, too, for as you might surmise, the wretches don't part with their eggs willingly."
         },
         "25005": {
@@ -1659,7 +1914,7 @@
         },
         "34011": {
             "Name": "Rot Tosser",
-            "Info": "Deploy: Spawn a Cow Carcass on an enemy row.\n(Cow Carcass; 1 Strength; After 2 turns, on turn end, destroy all the other Lowest units on the row and destroy self)",
+            "Info": "Deploy: Spawn a Cow Carcass on an enemy row.",
             "Flavor": "Let historians debate whether spreading plague in a besieged city is ethical. We just care if it's effective."
         },
         "34012": {
@@ -2139,7 +2394,7 @@
         },
         "44034": {
             "Name": "Bloody Flail",
-            "Info": "Deal 5 Damage and Spawn a Specter on a random row.\n(Specter; 5 Strength)",
+            "Info": "Deal 5 Damage and Spawn a Specter on a random row.",
             "Flavor": ""
         },
         "45001": {
@@ -2189,7 +2444,7 @@
         },
         "52003": {
             "Name": "Xavier Moran",
-            "Info": "Deploy: Boost this unit by the starting Power of the Dwarf with the strongest starting Power you played this round.",
+            "Info": "Deploy: Boost this unit by the base Power of the highest base power Dwarf you played this round.",
             "Flavor": "Well? Somethin' wrong? Venison a wee bit rank for ye? Ehh, princess?"
         },
         "52004": {
@@ -2414,7 +2669,7 @@
         },
         "54014": {
             "Name": "Dol Blathanna Bomber",
-            "Info": "Deploy: Spawn an Incinerating Trap on an enemy row.\n(Incinerating Trap; 1 Strength; Damage all units on this row by 2 on turn end)",
+            "Info": "Deploy: Spawn an Incinerating Trap on an enemy row.",
             "Flavor": "They track like hounds, run like deer and kill like heartless demons."
         },
         "54015": {
@@ -2539,7 +2794,7 @@
         },
         "62002": {
             "Name": "Hjalmar an Craite",
-            "Info": "Deploy: Spawn the Lord of Undvik on the opposite row.\n(Lord of Undvik; 5 Strength; Deathwish: Boost enemy Hjalmars by 14 and make them Immune.",
+            "Info": "Deploy: Spawn the Lord of Undvik on the opposite row.",
             "Flavor": "Instead of mournin' the fallen, let's drink to their memory!"
         },
         "62003": {
@@ -2584,7 +2839,7 @@
         },
         "62011": {
             "Name": "Coral",
-            "Info": "Deploy: Transform a Bronze or Silver unit into a Jade Figurine\n(Jade Figurine; 2 Strength)",
+            "Info": "Deploy: Transform a Bronze or Silver unit into a Jade Figurine",
             "Flavor": "Her true name's Astrid Lyttneyd Ásgeirrfinnbjornsdottir, but that never fit on any forms."
         },
         "62012": {
@@ -2594,7 +2849,7 @@
         },
         "62013": {
             "Name": "Kambi",
-            "Info": "Spying.\nDeathwish: Spawn Hemdall.\n(Hemdall; 20 Strength; Deploy: Destroy all units and clear all Boons and Hazards)",
+            "Info": "Spying.\nDeathwish: Spawn Hemdall.",
             "Flavor": "When the time comes, the cockerel Kambi shall crow and awaken Hemdall."
         },
         "63001": {
@@ -2614,7 +2869,7 @@
         },
         "63004": {
             "Name": "Blueboy Lugos",
-            "Info": "Deploy: Spawn a Spectral Whale on an enemy row.\n(Spectral Whale; 3 Strength; On turn end, move to a random row and deal 1 Damage to all units on it. Deathwish: Deal 1 damage to all units on this row)",
+            "Info": "Deploy: Spawn a Spectral Whale on an enemy row.",
             "Flavor": "I'm near ready to puke from boredom."
         },
         "63005": {
@@ -2654,7 +2909,7 @@
         },
         "63012": {
             "Name": "Harald Houndsnout",
-            "Info": "Deploy: Spawn Wilfred to the left, Wilhelm to the right and Wilmar on the opposite row.\n(Deathwish: Strengthen a random ally by 3)\n(Deathwish: Damage all units on the opposite row by 1)\n(Deathwish: Spawn a Bear on the opposite row).\n(Bear; 11 Strength)",
+            "Info": "Deploy: Spawn Wilfred to the left, Wilhelm to the right and Wilmar on the opposite row.",
             "Flavor": "Once proud jarl of Clan Tordarroch, now a muttering madman."
         },
         "63013": {
@@ -2759,7 +3014,7 @@
         },
         "64013": {
             "Name": "Svalblod Ravager",
-            "Info": "Whenever this unit is Damaged or Weakened, transform into a Raging Bear.\n(Raging Bear; 13 Strength)",
+            "Info": "Whenever this unit is Damaged or Weakened, transform into a Raging Bear.",
             "Flavor": "A two-handed axe? Seems no one told him that."
         },
         "64014": {
@@ -2859,7 +3114,7 @@
         },
         "64033": {
             "Name": "Tuirseach Bearmaster",
-            "Info": "Deploy: Spawn a Bear.\n(Bear; 11 Strength)",
+            "Info": "Deploy: Spawn a Bear.",
             "Flavor": "Don't touch him. Don't look him in the eyes. In fact… don't go anywhere near him."
         },
         "64034": {
@@ -2899,7 +3154,7 @@
         },
         "65007": {
             "Name": "Wilmar",
-            "Info": "Spying.\nDeathwish: If its opponent turn, Spawn a Bear on the opposite row.\n(Bear; 11 Strength)",
+            "Info": "Spying.\nDeathwish: If its opponent turn, Spawn a Bear on the opposite row.",
             "Flavor": ""
         },
         "70001": {
@@ -2954,7 +3209,7 @@
         },
         "70011": {
             "Name": "Lady Of The Lake: Advent",
-            "Info": "Spawn Lady Of The Lake.\n(Lady of The Lake; 25 Power; Deploy: Weaken self by 2 for every card in your hand and deck.)",
+            "Info": "Spawn Lady Of The Lake.",
             "Flavor": ""
         },
         "70012": {
@@ -3014,7 +3269,7 @@
         },
         "70024": {
             "Name": "Immortals",
-            "Info": "When an adjacent Cursed unit is destroyed, Spawn a Specter on this row, then damage self by 1.\n(Specter; 5 Strength)",
+            "Info": "When an adjacent Cursed unit is destroyed, Spawn a Specter on this row, then damage self by 1.",
             "Flavor": "Where one falls, another will take his place."
         },
         "70025": {
@@ -3049,7 +3304,7 @@
         },
         "70039": {
             "Name": "Terror Crew",
-            "Info": "Deal 4 Damage to a random enemy. When Discarded, trigger its ability and add 1 Terror Crew Plunderers to your deck. (10 Str; Deploy: Deal 4 Damage to a random enemy. When Discarded, trigger its ability and add a copy of this card to the bottom of your deck)",
+            "Info": "Deal 4 Damage to a random enemy. When Discarded, trigger its ability and add 1 Terror Crew Plunderers to your deck.",
             "Flavor": ""
         },
         "70040": {
@@ -3114,7 +3369,7 @@
         },
         "70070": {
             "Name": "Highwaymen",
-            "Info": "Single-Use: If there are only Bronze cards in your starting deck, Spawn a Strays of Spalla, then add 2 Strays of Spalla to your deck.\n(Strays of Spalla; 5 Strength; Single-Use: Deploy: Look at 2 different random Bronze units in your deck, then play one)",
+            "Info": "Single-Use: If there are only Bronze cards in your starting deck, Spawn a Strays of Spalla, then add 2 Strays of Spalla to your deck.",
             "Flavor": "We'll torture the merchant and sell the horses."
         },
         "70071": {
@@ -3189,7 +3444,7 @@
         },
         "70089": {
             "Name": "Artis",
-            "Info": "Deploy: Deal 7 damage to an enemy. If the target is destroyed, spawn a Cultist Oblation to the opposite row.\nCultist Oblation (After 2 turn, on the turn starts, banish itself. Deathwish: Heal a random unit in the opponent's half of the field with the most injuries and strengthen it by 1)",
+            "Info": "Deploy: Deal 7 damage to an enemy. If the target is destroyed, spawn a Cultist Oblation to the opposite row.",
             "Flavor": "Not all Svalblod priests were forced from the isles... Unfortunately."
         },
         "70090": {
@@ -3274,7 +3529,7 @@
         },
         "70106": {
             "Name": "Endrega Eggs",
-            "Info": "Deploy: Spawn 1 base copy of this card on its left.\nDeathwish: Spawn an Endrega Larva on the same position.\nAfter 3 turns, on turn end, destroy self.\n(5 Strength; After 3 turns, on turn end, transform into an Endrega Warrior)\n(Endrega Warrior; 7 Strength)",
+            "Info": "Deploy: Spawn 1 base copy of this card on its left.\nDeathwish: Spawn an Endrega Larva on the same position.\nAfter 3 turns, on turn end, destroy self.",
             "Flavor": "If you find some it's best to burn the entire forest down. Then run as far away as you can."
         },
         "70107": {
@@ -3384,7 +3639,7 @@
         },
         "70129": {
             "Name": "Natural Selection",
-            "Info": "Spawn 2 Arachas Hatchlings on a row. For each copy of this card in your graveyard, spawn an extra one.\n(Arachas Hatchling; 3 Strength; Summon all Arachas Drones on this row)",
+            "Info": "Spawn 2 Arachas Hatchlings on a row. For each copy of this card in your graveyard, spawn an extra one.",
             "Flavor": "The strongest will survive. So not you."
         },
         "70130": {
@@ -3409,7 +3664,7 @@
         },
         "70134": {
             "Name": "Crow Clan Druid",
-            "Info": "On turn end, if there is no Crow on this row, spawn a Crow on the right side.\n(Crow; 2 Strength. Deathwish: Deal 3 Damage to a random enemy)",
+            "Info": "On turn end, if there is no Crow on this row, spawn a Crow on the right side.",
             "Flavor": "Wise men claim that animals are mindless automatons. Wise men don't know what they're talking about."
         },
         "70135": {
@@ -3469,7 +3724,7 @@
         },
         "70146": {
             "Name": "Gael",
-            "Info": "Deploy: Deal 5 Damage to two enemy units each.",
+            "Info": "Deploy, Choose One: Deal 5 Damage to two enemy units each or Damage an enemy by 8.",
             "Flavor": "A fondness for shiny trinkets is not a trait unique to magpies."
         },
         "70147": {
@@ -3534,7 +3789,7 @@
         },
         "70159": {
             "Name": "Crowmother",
-            "Info": "Deploy: Discard up to 3 Bronze Special cards from your deck. While this card is on the board, spawn a Crow for each special card discarded.\n(Crow; 2 Strength. Deathwish: Deal 3 Damage to a random enemy)",
+            "Info": "Deploy: Discard up to 3 Bronze Special cards from your deck. While this card is on the board, spawn a Crow for each special card discarded.",
             "Flavor": "Some crows learn human words. And some humans learn the language of the crows."
         },
         "70160": {
@@ -3544,7 +3799,7 @@
         },
         "70161": {
             "Name": "Azar Javed",
-            "Info": "Deploy: Spawn 2 Scarabs.\n(Scarab: 1 Strength. If spying move to oposite row after you pass.)",
+            "Info": "Deploy: Spawn 2 Scarabs.",
             "Flavor": "Azar Javed's specialty is the element of fire. The sorcerer not only deftly manipulates the power of fire, it can be said that fire has become a part of his very being."
         },
         "70162": {
@@ -3596,6 +3851,26 @@
             "Name": "Giant's Belt",
             "Info": "Boost an ally by its base Power, if it is an Ogroid, strengthen it by 2 before.",
             "Flavor": "A sturdy leather belt, clearly crafted for a titan, yet inexplicably fits the torso of anyone who tries it on. Although the girdle makes its wearer as strong as a giant, it does not make them giant-size."
+        },
+        "70172": {
+            "Name": "Princess",
+            "Info": "Spawn a Bear. If there is a Witcher on this row, spawn a Raging Bear instead.",
+            "Flavor": "You've got all that important qualities every Roach has to have - you don't talk much."
+        },
+        "70173": {
+            "Name": "Deadeye Ambush",
+            "Info": "Select an ally, boost it by 5 and move it to the row below, select an enemy, damage it by 5 and move it to the melee row.",
+            "Flavor": "One, two, come into view; Three, four, hide 'hind the door; Five, six, this'll be quick; Seven, eight, come meet your fate!"
+        },
+        "70174": {
+            "Name": "Mage Infiltrator",
+            "Info": "Spying.\nReveal two enemy cards, then Spawn and Play a copy of a different bronze card in your opponent's hand.",
+            "Flavor": "In her spare time, she likes playing practical jokes on others. Her favorite gag is switching footwraps and headwear."
+        },
+        "70175": {
+            "Name": "Trapmaker",
+            "Info": "When an allied ambush is activated, Summon a copy of self on the same row.",
+            "Flavor": "Always the same with these people: Ahhh, I can't feel my legs! You'd think they'd at least appreciate the craftsmanship..."
         },
         "80001": {
             "Name": "Auberon: King",

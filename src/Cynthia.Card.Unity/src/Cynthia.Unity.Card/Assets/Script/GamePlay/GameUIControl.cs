@@ -8,6 +8,7 @@ using System.Linq;
 using System;
 using Assets.Script.Localization;
 using Autofac;
+using UnityEngine.AddressableAssets;
 
 public class GameUIControl : MonoBehaviour
 {
@@ -33,6 +34,8 @@ public class GameUIControl : MonoBehaviour
     public Text EnemyName;//
     public Text MyMMR;
     public Text EnemyMMR;
+    public Text MyTitle;
+    public Text EnemyTitle;
     //-----------------------------------
     public GameObject MyCrownLeft;//
     public GameObject MyCrownRight;//
@@ -40,6 +43,13 @@ public class GameUIControl : MonoBehaviour
     public GameObject EnemyCrownRight;//
     public GameObject MyLandObject;
     public GameObject EnemyLandObject;
+    //-----------------------------------
+    public Image MyAvatar;
+    public Image EnemyAvatar;
+    public Image MyBorder;
+    public Image EnemyBorder;
+    public string Myavatar;
+    public string Enemyname;
     //----------------------------------
     public GameObject MyPass;
     public GameObject EnemyPass;
@@ -49,6 +59,9 @@ public class GameUIControl : MonoBehaviour
 
     private LocalizationService _translator;
     private GwentClientService server;
+    //----------------------------------    
+    private IList<Title> _titles { get => TrinketMap.GetTitles().ToList(); } // lists all title cosmetics
+    private static Dictionary<string, Color> mycolormap { get => ColorMap.colormap; } // stores the color of the title cosmetics
 
     private void Awake()
     {
@@ -141,7 +154,7 @@ public class GameUIControl : MonoBehaviour
             EnemyCrownRight.SetActive(true);
         }
     }
-    public void SetNameInfo(GameInfomation gameInfomation)
+    public async void SetNameInfo(GameInfomation gameInfomation)
     {
         var Enemy = gameInfomation.EnemyName;
         List<string> botnames = new List<string> { "ai0_name", "ai1_name", "ai2_name", "ai3_name", "ai4_name", "ai5_name"};
@@ -153,8 +166,29 @@ public class GameUIControl : MonoBehaviour
         {
             EnemyName.text = Enemy;
         }
-            
         MyName.text = gameInfomation.MyName;
+        MyTitle.text = gameInfomation.MyTitle;
+        Myavatar = gameInfomation.MyAvatar;
+        Enemyname = gameInfomation.EnemyName;
+        EnemyTitle.text = gameInfomation.EnemyTitle;
+        string mycolor = _titles.Where(x => x.ID == gameInfomation.MyTitle).Single().TitleColor;
+        MyTitle.color= mycolormap[mycolor];
+        string enemycolor = _titles.Where(x => x.ID == gameInfomation.EnemyTitle).Single().TitleColor;
+        EnemyTitle.color= mycolormap[enemycolor];
+        var op = Addressables.LoadAssetAsync<Sprite>(gameInfomation.MyAvatar);
+        Sprite go = op.WaitForCompletion();
+        MyAvatar.sprite = go;
+        op = Addressables.LoadAssetAsync<Sprite>(gameInfomation.EnemyAvatar);
+        go = op.WaitForCompletion();
+        Debug.Log(gameInfomation.EnemyAvatar);
+        EnemyAvatar.sprite = go;
+        op = Addressables.LoadAssetAsync<Sprite>(gameInfomation.MyBorder);
+        go = op.WaitForCompletion();
+        MyBorder.sprite = go;
+        op = Addressables.LoadAssetAsync<Sprite>(gameInfomation.EnemyBorder);
+        go = op.WaitForCompletion();
+        EnemyBorder.sprite = go;
+
     }
     public void SetMMRInfo(int myMMR, int enemyMMR)
     {
@@ -192,7 +226,7 @@ public class GameUIControl : MonoBehaviour
         //各种数量
         SetCountInfo(gameInfomation);
         //------------------------------------
-        //名称
+        //Set the name, avatar, border and title of both players
         SetNameInfo(gameInfomation);
         //-------------------------------------
         //皇冠图标

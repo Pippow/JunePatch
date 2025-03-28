@@ -167,6 +167,248 @@
         "IngameMenu_RoundWonTitle": "Wygrałeś TĘ RUNDĘ!",
         "IngameMenu_RoundLostTitle": "PRZECIWNIK WYGRAŁ TĘ RUNDĘ!",
         "IngameMenu_RoundDrawTitle": "REMIS!",
+        "TrinketsMenu_SetAvatarButton": "Ustaw Awatar",
+        "TrinketsMenu_SetBorderButton": "Ustaw Ramke",
+        "TrinketsMenu_SetTitleButton": "Ustaw Tytuł",
+        "TrinketsMenu_TrinketOwned": "Posiadane",
+        "TrinketsMenu_TrinketNotOwned": "Zablokowane",
+        "TrinketsMenu_Rank": "Ranga",
+        "TrinketsMenu_Trinkets": "Dodatki",
+        "TrinketsMenu_Avatars": "Awatary",
+        "TrinketsMenu_Borders": "Ramki",
+        "TrinketsMenu_Titles": "Tytuły",
+        "NoAvatarName": "Brak Avatara",
+        "NoAvatarDescription": "Domyślnie odblokowane.",
+        "GeraltOfRiviaName": "Geralt z Rivii",
+        "GeraltOfRiviaDescription": "Domyślnie odblokowane.",
+        "Geralt1": "Tego pewnie się nie spodziewasz.",
+        "Geralt2": "Psiakrew... nie podoba mi się to.",
+        "Geralt3": "Odejdź póki jeszcze możesz.",
+        "Geralt4": "Źle! Błąd za błędem.",
+        "Geralt5": "Całkiem nieźle.",
+        "Geralt6": "Dzięki.",
+        "TrissMerigoldName": "Triss Merigold",
+        "TrissMerigoldDescription": "Domyślnie odblokowane.",
+        "Triss1": "Patrz na to!",
+        "Triss2": "Psiakrew!",
+        "Triss3": "Lepiej od razu się poddaj!",
+        "Triss4": "Pomyłka.",
+        "Triss5": "No, no, dobra robota.",
+        "Triss6": "Dzięki.",
+        "YenneferName": "Yennefer z Vengerbergu",
+        "YenneferDescription": "Domyślnie odblokowane.",
+        "Yennefer1": "To może cię zaskoczyć.",
+        "Yennefer2": "Idź do diabła!",
+        "Yennefer3": "Pożałujesz, że stanąłeś mi na drodze!",
+        "Yennefer4": "Błąd nowicjusza.",
+        "Yennefer5": "Dobrze rozegrane.",
+        "Yennefer6": "Dziękuję.",
+        "CiriName": "Ciri",
+        "CiriDescription": "",
+        "Ciri1": "Teraz uważaj, może czegoś się nauczysz.",
+        "Ciri2": "Zaraza!",
+        "Ciri3": "Uciekaj póki możesz!",
+        "Ciri4": "Duży błąd.",
+        "Ciri5": "No nieźle, dobre zagranie.",
+        "Ciri6": "Dzięki! To miłe.",
+        "DandelionName": "Jaskier",
+        "DandelionDescription": "",
+        "Dandelion1": "Obserwuj, jak robi to mistrz.",
+        "Dandelion2": "Co? Ale jak to?!",
+        "Dandelion3": "Nie wiesz w co się właśnie wpakowałeś...",
+        "Dandelion4": "Elementarny błąd.",
+        "Dandelion5": "To ci się udało, winszuję.",
+        "Dandelion6": "Dzięki, przyjacielu!",
+        "Zoltan_Animal_TamerName": "Zoltan Treser",
+        "Zoltan_Animal_TamerDescription": "",
+        "Zoltan1": "No, to teraz będzie się działo!",
+        "Zoltan2": "Duvvelsheyss!",
+        "Zoltan3": "Ale ci zaraz nakopię do rzyci!",
+        "Zoltan4": "Hm, to chyba nie tak miało być...",
+        "Zoltan5": "Ha! No i proszę!",
+        "Zoltan6": "Dzięki, brachu!",
+        "YenneferFuryName": "Yennefer Furia",
+        "YenneferFuryDescription": "",
+        "Vernon_RocheName": "Vernon Roche",
+        "Vernon_RocheDescription": "",
+        "Roche1": "Uderzymy szybko i skutecznie.",
+        "Roche2": "Ożesz...",
+        "Roche3": "Wybić ich do nogi!",
+        "Roche4": "Poważny błąd.",
+        "Roche5": "No, no, jestem pod wrażeniem.",
+        "Roche6": "Dzięki.",
+        "TrissSorceressName": "Triss Czarodziejka",
+        "TrissSorceressDescription": "Osiągnij range 18tą w pierwszym sezonie.",
+        "RegisName": "Regis",
+        "RegisDescription": "",
+        "Regis1": "A teraz patrz uważnie.",
+        "Regis2": "Hm, niedobrze...",
+        "Regis3": "Nie myl mojej uprzejmości ze słabością.",
+        "Regis4": "Nawet ja czasem popełniam błędy.",
+        "Regis5": "Dobra robota!",
+        "Regis6": "Masz moją wdzięczność.",
+        "RadovidName": "Król Radowid Vty",
+        "RadovidDescription": "",
+        "Radovid1": "Szach i mat.",
+        "Radovid2": "Dość tego!",
+        "Radovid3": "Stracisz za to głowę!",
+        "Radovid4": "Podstawowy błąd.",
+        "Radovid5": "Hm, nie doceniałem cię.",
+        "Radovid6": "Doceniam twoją służbę.",
+        "PhoenixName": "Feniks",
+        "PhoenixDescription": "",
+        "Phoenix1": "...",
+        "Phoenix2": "...",
+        "Phoenix3": "...",
+        "Phoenix4": "...",
+        "Phoenix5": "...",
+        "Phoenix6": "...",
+        "OdrinName": "Odrin",
+        "OdrinDescription": "",
+        "Odrin1": "Ruszaam się... albo nie ruszam?",
+        "Odrin2": "Oszeszty zassrany... a fięc to tak?!",
+        "Odrin3": "Jak ja ci saras zasune kopa do szyci...",
+        "Odrin4": "To tak miało byś? Ugh... nie pamietam...",
+        "Odrin5": "He? Jak... yp... jak to srobiłeś?",
+        "Odrin6": "Ooo... dziękii, pszyjasielu!",
+        "LethoName": "Letho z Gulety",
+        "LethoDescription": "",
+        "Letho1": "Obserwuj uważnie.",
+        "Letho2": "Hrmph... niedobrze.",
+        "Letho3": "To będzie zbyt proste.",
+        "Letho4": "Błąd za błędem.",
+        "Letho5": "Nieźle sobie radzisz.",
+        "Letho6": "Dzięki.",
+        "King_BranName": "Bran Tuirseach",
+        "King_BranDescription": "",
+        "Bran1": "Z tarczą, lub na tarczy!",
+        "Bran2": "Niech cię syreny zeżrą!",
+        "Bran3": "Stąpasz po kruchym lodzie...",
+        "Bran4": "Spory błąd...",
+        "Bran5": "Ha! Godny przeciwnik!",
+        "Bran6": "Wyspy są ci wdzięczne.",
+        "IorvethScarfName": "Iorweth w chuście",
+        "IorvethScarfDescription": "",
+        "IorvethName": "Iorweth",
+        "IorvethDescription": "",
+        "Iorveth1": "Nie śmiałością, lecz sprytem zwyciężaj.",
+        "Iorveth2": "Bloede arse!",
+        "Iorveth3": "Takim jak ty smarujemy głowę miodem i wkładamy w mrowisko.",
+        "Iorveth4": "Pomyłka.",
+        "Iorveth5": "Imponujące.",
+        "Iorveth6": "Moje podziękowania.",
+        "Imlerith_UnmaskedName": "Imlerith Bez Maski",
+        "Imlerith_UnmaskedDescription": "Zakończ sezon 1 w pierwszej 10 graczy.",
+        "ImlerithName": "Imlerith",
+        "ImlerithDescription": "",
+        "Imlerith1": "Raaawr!",
+        "Imlerith2": "Aaargh!",
+        "Imlerith3": "Stawaj!",
+        "Imlerith4": "Coś nie tak?",
+        "Imlerith5": "Kto cię nauczył tak grać?",
+        "Imlerith6": "Niech tak będzie.",
+        "Geralt_IntoxicatedName": "Geralt Odurzony",
+        "Geralt_IntoxicatedDescription": "",
+        "FrancescaName": "Francesca",
+        "FrancescaDescription": "",
+        "Francesca1": "Aen Seidhe mogą cię zaskoczyć.",
+        "Francesca2": "A d'yaebl aep arse!",
+        "Francesca3": "Przejdziesz w zapomnienie!",
+        "Francesca4": "Squaess'me.",
+        "Francesca5": "Dobry ruch.",
+        "Francesca6": "Masz moją wdzięczność.",
+        "Maerolorn_Name": "Bezkost",
+        "Maerolorn_Description": "",
+        "Maerolorn1": "...",
+        "Maerolorn2": "...",
+        "Maerolorn3": "...",
+        "Maerolorn4": "...",
+        "Maerolorn5": "...",
+        "Maerolorn6": "...",
+        "Eredin_UnmaskedName": "Eredin Bez Maski",
+        "Eredin_UnmaskedDescription": "",
+        "Eredin1": "Wiesz, jak to się skończy.",
+        "Eredin2": "Bleode verin!",
+        "Eredin3": "Zginiesz, robaku.",
+        "Eredin4": "Błąd.",
+        "Eredin5": "Byłbyś dobrym niewolnikiem.",
+        "Eredin6": "Tak, jak być powinno.",
+        "Dandelionthewitcher2Name": "Jakier Wiedźmin 2",
+        "Dandelionthewitcher2Description": "Osiągnij 13tą rangę w pierwszym sezonie.",
+        "DagonName": "Dagon",
+        "DagonDescription": "",
+        "Dagon1": "Hai y-cgof'nn!",
+        "Dagon2": "Mnahn'yar!",
+        "Dagon3": "Stell'bsna n'gha!",
+        "Dagon4": "Or'azath...",
+        "Dagon5": "Vulgtmnah mgehye'btnk.",
+        "Dagon6": "C-s'uhn athg.",
+        "ClassicGeraltName": "Klasyczny Geralt",
+        "ClassicGeraltDescription": "Weź udział w pierwszym sezonie.",
+        "CirALtName": "Ciri Starszej Krwi",
+        "Taunt1": "PATRZ NA TO!",
+        "Taunt2": "CHOLERA!",
+        "Taunt3": "To TWÓJ KONIEC",
+        "Taunt4": "ZŁY RUCH",
+        "Taunt5": "DOBRZE ZAGRANE",
+        "Taunt6": "DZIĘKUJE",
+        "CirALtDescription": "",
+        "NOVICEName": "",
+        "NOVICEDescription": "Osiągnij range 3.",
+        "APPRENTICEName": "",
+        "APPRENTICEDescription": "Osiągnij range 6.",
+        "JOURNEYMANName": "",
+        "JOURNEYMANDescription": "Osiągnij range 9.",
+        "ADEPTName": "",
+        "ADEPTDescription": "Osiągnij range 12.",
+        "CARDSHARPName": "",
+        "CARDSHARPDescription": "Osiągnij range 15.",
+        "MASTERName": "",
+        "MASTERDescription": "Osiągnij range 18.",
+        "GRANDMASTERName": "",
+        "GRANDMASTERDescription": "Osiągnij range 21.",
+        "MAN-AT-ARMSName": "",
+        "MAN-AT-ARMSDescription": "Ukończ sezon pierwszy w top 100 graczy.",
+        "MERCENARYName": "",
+        "BOUNTYHUNTERDescription": "Ukończ sezon pierwszy w top 50 graczy.",
+        "BOUNTYHUNTERName": "",
+        "BOUNTY HUNTERDescription": "Ukończ sezon pierwszy w top 20 graczy.",
+        "VETERANName": "",
+        "VETERANDescription": "Ukończ sezon pierwszy w top 10 graczy.",
+        "CARDSMITHName": "",
+        "CARDSMITHDescription": "Domyślnie odblokowane.",
+        "CHAMPIONName": "",
+        "CHAMPIONDescription": "Ukończ sezon pierwszy w top 5 graczy.",
+        "HEROName": "",
+        "HERODescription": "Ukończ sezon pierwszy jako najlepszy gracz.",
+        "PIONEERName": "PIONIER",
+        "PIONEERDescription": "Weź udział w pierwszym sezonie",
+        "Rank3borderName": "Ranga 3",
+        "Rank3borderDescription": "Osiągnij rangę 3.",
+        "Rank6borderName": "Ranga 6",
+        "Rank6borderDescription": "Osiągnij rangę 6.",
+        "Rank9borderName": "Ranga 9",
+        "Rank9borderDescription": "Osiągnij rangę 9.",
+        "Rank12borderName": "Ranga 12",
+        "Rank12borderDescription": "Osiągnij rangę 12.",
+        "Rank15borderName": "Ranga 15",
+        "Rank15borderDescription": "Osiągnij rangę 15.",
+        "Rank18borderName": "Ranga 18",
+        "Rank18borderDescription": "Osiągnij rangę 18.",
+        "Rank21borderName": "Ranga 21",
+        "Rank21borderDescription": "Osiągnij rangę 21.",
+        "Season1Border1Name": "Sezon 1 Ramka 1",
+        "Season1Border1Description": "Ukończ sezon pierwszy w top 100 graczy.",
+        "Season1Border2Name": "Sezon 1 Ramka 2",
+        "Season1Border2Description": "Ukończ sezon pierwszy w top 50 graczy.",
+        "Season1Border3Name": "Sezon 1 Ramka 3",
+        "Season1Border3Description": "Ukończ sezon pierwszy w top 20 graczy..",
+        "Season1Border4Name": "Sezon 1 Ramka 4",
+        "Season1Border4Description": "Ukończ sezon pierwszy w top 10 graczy.",
+        "Season1Border5Name": "Sezon 1 Ramka 5",
+        "Season1Border5Description": "Ukończ sezon pierwszy w top 5 graczy.",
+        "Season1Border6Name": "Sezon 1 Ramka 6",
+        "Season1Border6Description": "Ukończ sezon pierwszy jako najlepszy gracz.",
         "IngameMenu_GGButton": "GG!",
         "GG_Message1": "Good Game! Twój przeciwnik ",
         "GG_Message2": " wysłał GG!",
@@ -264,6 +506,13 @@
         "CardTag_Raid": "Raid",
         "CardTag_Crime": "Crime",
         "CardTag_Test": "Test",
+        "ai0_name": "Geralt i Ciri",
+        "ai1_name": "Szkolenie rekrutów",
+        "ai2_name": "Avallac'h",
+        "ai3_name": "Król Oberon",
+        "ai4_name": "Najemna kompania Żelaznych Sokołów",
+        "ai5_name": "Łowca smoków",
+        "Surrender_button": "Poddaj",
         "ShupeKnight_1_Strengthen": "Wzmocnij się do 25.",
         "ShupeKnight_2_Resilience": "Wytrzymałość.",
         "ShupeKnight_3_Duel": "Stocz pojedynek z wrogiem. ",
@@ -319,7 +568,9 @@
         "Sihil_2_DamageEven": "Zadaj 3 pkt obrażeń wszystkim wrogom o parzystej sile.",
         "Sihil_3_PlayUnit": "Zagraj losową brązową lub srebrną jednostkę ze swojej talii.",
         "VriheddSaboteur_1_RandomItem": "Zagraj losowy brązowy przedmiot.",
-        "VriheddSaboteur_2_STItem": "Zagraj brązowy przedmiot Scoia'tael."
+        "VriheddSaboteur_2_STItem": "Zagraj brązowy przedmiot Scoia'tael.",
+        "Gael_1_Damage2Units": "Zadaj 5 pkt obrażeń dwóm wrogom.",
+        "Gael_1_Damage1Unit": "Zadaj wrogowi 8pkt obrażeń."
     },
     "CardLocales": {
         "12001": {
@@ -394,7 +645,7 @@
         },
         "12015": {
             "Name": "Zoltan Szelma",
-            "Info": "Rozmieszczenie: Wybierz: Stwórz Dudę Towarzysza, który wzmocni 2 sąsiadujące jednostki o 2 lub Stwórz Dudę Mąciciela, który zada 2 sąsiadującym jednostkom 2 pkt obrażeń. (Duda; 1 siły)",
+            "Info": "Rozmieszczenie: Wybierz: Stwórz Dudę Towarzysza, który wzmocni 2 sąsiadujące jednostki o 2 lub Stwórz Dudę Mąciciela, który zada 2 sąsiadującym jednostkom 2 pkt obrażeń.",
             "Flavor": "Wybaczcie. Mądre to zamorskie ptaszysko, ale nieobyczajne. Dziesięć talarów za cudaka dałem."
         },
         "12016": {
@@ -439,7 +690,7 @@
         },
         "12024": {
             "Name": "Yennefer",
-            "Info": "Rozmieszczenie: Wybierz: Stwórz Jednorożca, który wzmacnia wszystkie inne jednostki o 2 lub Stwórz Chironexa, który zadaje wszystkim innym jednostkom 2 pkt obrażeń.\n(Jednorożec; 1 Siły)\n(Chironex; 4 Siły)",
+            "Info": "Rozmieszczenie: Wybierz: Stwórz Jednorożca, lub Chironexa.",
             "Flavor": "Odziana w kompozycję czerni i bieli, przywodziła na myśl grudniowy poranek."
         },
         "12025": {
@@ -554,7 +805,7 @@
         },
         "13005": {
             "Name": "Maćko z Lisich Dołów",
-            "Info": "Rozmieszczenie: Stwórz po obu stronach tej jednostki 2 Krowy.\n(Krowa; 1 pkt siły)",
+            "Info": "Rozmieszczenie: Stwórz po obu stronach tej jednostki 2 Krowy.",
             "Flavor": "Bohater, którego Toussaint potrzebowało, ale na którego nie zasługiwało."
         },
         "13006": {
@@ -635,11 +886,11 @@
         "13021": {
             "Name": "Dudu",
             "Info": "Rozmieszczenie: Skopiuj siłę wroga.",
-            "Flavor": "Mimik. Ma zresztą wiele nazw – mieniak, podwójniak, vexling, bedak. Lub doppler."
+            "Flavor": "Mimik. Ma zresztą wiele nazw - mieniak, podwójniak, vexling, bedak. Lub doppler."
         },
         "13022": {
             "Name": "Krowa Czempionka",
-            "Info": "Zemsta: Stwórz Czarta w losowym rzędzie.\n(Czart; 14 pkt siły)",
+            "Info": "Zemsta: Stwórz Czarta w losowym rzędzie.",
             "Flavor": "Muuuuu."
         },
         "13023": {
@@ -654,7 +905,7 @@
         },
         "13025": {
             "Name": "Zaklęcie Kompresji",
-            "Info": "Przemień brązową lub srebrną jednostkę w Jadeitową Figurkę.\n(Jadeitowa Figurka; 2 pkt siły)",
+            "Info": "Przemień brązową lub srebrną jednostkę w Jadeitową Figurkę.",
             "Flavor": ""
         },
         "13026": {
@@ -779,7 +1030,7 @@
         },
         "14006": {
             "Name": "Wściekły Ryk",
-            "Info": "Zniszcz sojusznika. Stwórz i zagraj niedźwiedzia.\n(Niedźwiedź; 11 pkt siły)",
+            "Info": "Zniszcz sojusznika. Stwórz i zagraj niedźwiedzia.",
             "Flavor": ""
         },
         "14007": {
@@ -794,7 +1045,7 @@
         },
         "14009": {
             "Name": "Brzask",
-            "Info": "Stwórz Czyte Niebo lub Rajd. (Czyste niebo: Wzmocnij wszystkich rannych sojuszników znajdujących się pod wpływem Zagrożeń o 2 i usuń wszystkie Zagrożenia po swojej stronie)\n(Rajd: Zagraj losową brązową jednostkę ze swojej talii)",
+            "Info": "Stwórz Czyte Niebo lub Rajd.",
             "Flavor": ""
         },
         "14010": {
@@ -884,7 +1135,7 @@
         },
         "14027": {
             "Name": "Chłopska Milicja",
-            "Info": "Stwórz 3 Chłopów w wybranym rzędzie.\n(Chłop; 3 pkt siły)",
+            "Info": "Stwórz 3 Chłopów w wybranym rzędzie.",
             "Flavor": "My jesteśmy milicja. Porządku pilnujem."
         },
         "15001": {
@@ -1074,7 +1325,7 @@
         },
         "23005": {
             "Name": "Ifrit",
-            "Info": "Rozmieszczenie: Stwórz 3 Pomniejsze Ifirty po prawej stronie tej jednostki.\n(Pomniejszy Ifryt; 1 pkt siły; Gdy zostanie przyzwany, zadaj 1 pkt obrażeń losowemu wrogowi)",
+            "Info": "Rozmieszczenie: Stwórz 4 Pomniejsze Ifirty po prawej stronie tej jednostki.",
             "Flavor": "No, teraz to się zrobi gorąco."
         },
         "23006": {
@@ -1209,7 +1460,7 @@
         },
         "24010": {
             "Name": "Olbrzymi Krabopająk",
-            "Info": "Gdy pochłoniesz jednostkę, stwórz Młode Krabopająka w losowym rzędzie.\nPowtórz do  3 razy.\n(Młode Krabopająka; 3 pkt siły; Wezwij do tego rzędu wszystkie Krabopająki.)",
+            "Info": "Gdy pochłoniesz jednostkę, stwórz Młode Krabopająka w losowym rzędzie. Powtórz do  3 razy.",
             "Flavor": "To... To się rusza!"
         },
         "24011": {
@@ -1249,8 +1500,8 @@
         },
         "24018": {
             "Name": "Harpia Celaeno",
-            "Info": "Rozmieszczenie: Stwórz 2 Jaja Harpii.\n(Jajo harpii; 1 pkt siły; po pochłonięciu przez inną jednostkę wzmocnij tę jednostkę o dodatkowe 5.\nZemsta: stwórz Piskle Harpi w losowym rzędzie)\n(Piskle Harpi; 1 siła)",
-            "Flavor": "Zwykłe harpie żywią się padliną. A Celaeno – snami."
+            "Info": "Rozmieszczenie: Stwórz 2 Jaja Harpii.",
+            "Flavor": "Zwykłe harpie żywią się padliną. A Celaeno - snami."
         },
         "24019": {
             "Name": "Kuroliszek",
@@ -1369,7 +1620,7 @@
         },
         "25004": {
             "Name": "Jajo Harpii",
-            "Info": "Po pochłonięciu wzmocnij pochłaniającą jednostkę o 5.\nZemsta: Stwórz Piskle Harpi w losowym rzędzie.\n(Piskle Harpi; 1 siła)",
+            "Info": "Po pochłonięciu wzmocnij pochłaniającą jednostkę o dodatkowe 4.\nZemsta: Stwórz Piskle Harpi w losowym rzędzie.",
             "Flavor": "Omlet z jaj harpii to prawdziwy rarytas. Ale, jak waszmość może sobie wyobrazić, harpie nie dzielą się nimi zbyt ochoczo."
         },
         "25005": {
@@ -1659,7 +1910,7 @@
         },
         "34011": {
             "Name": "Siewca Zarazy",
-            "Info": "Rozmieszczenie: Stwórz Krowie truchło we wrogim rzędzie.\n(Krowie truchło; 1 pkt siły; Po 2 turach, na koniec tury, zniszcz siebie i najsłabsze jednostki w tym rzędzie)",
+            "Info": "Rozmieszczenie: Stwórz Krowie truchło we wrogim rzędzie.",
             "Flavor": "Historycy mogą spierać się nad tym, czy sianie zarazy wśród obrońców jest etyczne. Dla nas istotna jest przede wszystkim efektywność."
         },
         "34012": {
@@ -2139,7 +2390,7 @@
         },
         "44034": {
             "Name": "Krwawy Korbacz",
-            "Info": "Zadaj 5 pkt obrażeń i stwórz w losowym rzędzie Upiora.\n(Upiór 5 pkt siły)",
+            "Info": "Zadaj 5 pkt obrażeń i stwórz w losowym rzędzie Upiora.",
             "Flavor": ""
         },
         "45001": {
@@ -2189,7 +2440,7 @@
         },
         "52003": {
             "Name": "Xavier Moran",
-            "Info": "Rozmieszczenie: Wzmocnij tę jednostkę o siłę początkową ostatniego zagranego przez ciebie innego Krasnoluda.",
+            "Info": "Rozmieszczenie: Wzmocnij tę jednostkę o siłę bazową krasnoluda o największej sile bazowej spośród zagranych przez Ciebie w tej rundzie.",
             "Flavor": "No, co jest? Śmierdzi ci sarnina, królewiczu?"
         },
         "52004": {
@@ -2414,7 +2665,7 @@
         },
         "54014": {
             "Name": "Elfi Traper",
-            "Info": "Rozmieszczenie: Stwórz Pułapkę Zapalającą w wybranym wrogim rzędzie.\n(Pułapka Zapalająca; 1 pkt siły; Na koniec tury zadaj wszystkim jednostkom w tym rzędzie 2 pkt obrażeń.)",
+            "Info": "Rozmieszczenie: Stwórz Pułapkę Zapalającą w wybranym wrogim rzędzie.",
             "Flavor": "Nosy mają jak psy gończe. Oczy jak sokoły. A serca z lodu."
         },
         "54015": {
@@ -2539,7 +2790,7 @@
         },
         "62002": {
             "Name": "Hjalmar an Craite",
-            "Info": "Rozmieszczenie: Stwórz Władcę Undvik w przeciwnym rzędzie.\n(Szpieg. Zemsta: Wzmocnij wrogich Hjalmarów o 14 i daj im odporność.)",
+            "Info": "Rozmieszczenie: Stwórz Władcę Undvik w przeciwnym rzędzie.",
             "Flavor": "Zamiast użalać się nad poległymi, lepiej wypijmy za ich pamięć!"
         },
         "62003": {
@@ -2584,7 +2835,7 @@
         },
         "62011": {
             "Name": "Koral",
-            "Info": "Rozmieszczenie: Przemień brązową lub srebrną jednostkę w Jadeitową Figurkę.\n(Jadeitowa Figurka; 2 pkt siły)",
+            "Info": "Rozmieszczenie: Przemień brązową lub srebrną jednostkę w Jadeitową Figurkę.",
             "Flavor": "Jej prawdziwe imię to Astrid Lyttneyd Ásgeirrfinnbjornsdottir, ale miała już dosyć problemów w urzędach."
         },
         "62012": {
@@ -2594,7 +2845,7 @@
         },
         "62013": {
             "Name": "Kambi",
-            "Info": "Szpieg. Zemsta: Stwórz Hemdalla.\n(Hemdal; 20 pkt siły; Rozmieszczenie: Zniszcz wszystkie jednostki, zagrożenia i korzyści)",
+            "Info": "Szpieg. Zemsta: Stwórz Hemdalla.",
             "Flavor": "Kiedy przyjdzie czas, Kambi zapieje i ostrzeże Hemdalla."
         },
         "63001": {
@@ -2614,7 +2865,7 @@
         },
         "63004": {
             "Name": "Lugos Siny",
-            "Info": "Rozmieszczenie: Stwórz Widmowego Wieloryba w wybranym wrogim rzędzie.\n(Widmowy wieloryb; 3 pkt siły; Na koniec tury przenieś się do losowego rzędu i zadaj 1 pkt obrażeń wszystkich jednostką w tym rzędzie. Zemsta: zadaj 1 pkt obrażeń wszystkich jednostką w tym rzędzie)",
+            "Info": "Rozmieszczenie: Stwórz Widmowego Wieloryba w wybranym wrogim rzędzie.",
             "Flavor": "Zaraz porzygam się z nudów."
         },
         "63005": {
@@ -2654,7 +2905,7 @@
         },
         "63012": {
             "Name": "Harald Psia Gęba",
-            "Info": "Rozmieszczenie: Stwórz Wilfreda po lewej stronie tej jednostki, Wilhelma po prawej stronie tej jednostki i Wilmara w przeciwnym rzędzie./n(Zemsta: Ulepsz losowego sojusznika o 3)\n(Zemsta: Zadaj wszystkim jednostką w przeciwnym rzędzie 1 pkt obrażeń)\n(Zemsta: Stwórz Niedźwiedzia w przeciwnym rzędzie)\n(Niedźwiedź; 11 pkt siły)",
+            "Info": "Rozmieszczenie: Stwórz Wilfreda po lewej stronie tej jednostki, Wilhelma po prawej stronie tej jednostki i Wilmara w przeciwnym rzędzie.",
             "Flavor": "Niegdyś dumny jarl klanu Tordarroch, dziś bełkoczący szaleniec."
         },
         "63013": {
@@ -2759,7 +3010,7 @@
         },
         "64013": {
             "Name": "Wściekły Berserker",
-            "Info": "Za każdym razem, gdy ta jednostka zostanie zraniona lub osłabiona, przemień ją we Wściekłego Niedźwiedzia (Wściekły Niedźwiedź; 13 pkt siły).",
+            "Info": "Za każdym razem, gdy ta jednostka zostanie zraniona lub osłabiona, przemień ją we Wściekłego Niedźwiedzia.",
             "Flavor": "Mówisz, że ten topór jest oburęczny? Może dla ciebie."
         },
         "64014": {
@@ -2859,7 +3110,7 @@
         },
         "64033": {
             "Name": "Treser Tuirseach",
-            "Info": "Rozmieszczenie: Stwórz Niedźwiedzia.\n(Niedźwiedź; 11 pkt siły)",
+            "Info": "Rozmieszczenie: Stwórz Niedźwiedzia.",
             "Flavor": "Nie dotykaj go. Nie patrz mu w oczy. Tak po prawdzie... Lepiej w ogóle nie podchodź."
         },
         "64034": {
@@ -2899,7 +3150,7 @@
         },
         "65007": {
             "Name": "Wilmar",
-            "Info": "Szpieg. Zemsta: Jeśli jest tura przeciwnika, Stwórz niedźwiedzia w przecinym rzędzie.\n(Niedźwiedź; 11 pkt siły)",
+            "Info": "Szpieg. Zemsta: Jeśli jest tura przeciwnika, Stwórz niedźwiedzia w przecinym rzędzie.",
             "Flavor": ""
         },
         "70001": {
@@ -2954,7 +3205,7 @@
         },
         "70011": {
             "Name": "Pani Jeziora Adwent",
-            "Info": "Stwórz Panią jeziora. (Pani Jeziora; 25 pkt siły; Rozmieszczenie: Osłab te jednostkę o 2 pkt za każdą kartę w Twojej ręce i tali.)",
+            "Info": "Stwórz Panią jeziora.",
             "Flavor": ""
         },
         "70012": {
@@ -3014,7 +3265,7 @@
         },
         "70024": {
             "Name": "Przeklęty Nieśmiertelny",
-            "Info": "Gdy sąsiednia przeklęta jednostka zostanie zniszczona stwórz Upiora w tym rzędzie i zadaj sobie 1 pkt obrażeń.\n(Upiór; 5 pkt siły)",
+            "Info": "Gdy sąsiednia przeklęta jednostka zostanie zniszczona stwórz Upiora w tym rzędzie i zadaj sobie 1 pkt obrażeń.",
             "Flavor": "Gdzie jeden padnie, tam zaraz drugi stanie."
         },
         "70025": {
@@ -3049,7 +3300,7 @@
         },
         "70039": {
             "Name": "Pazur Wilka",
-            "Info": "Zadaj 4 pkt obrażeń losowemu wrogowi. Kiedy odrzucisz te kartę, aktywuj jej Rozmieszczenie i wtasuj 1 wilczych wojowników do Twojej talii./n(Wilczy Wojownik; 10 pkt siły; Rozmieszczenie: Zadaj 4 pkt obrażeń losowemu wrogowi. Kiedy odrzucisz tę kartę aktywuj jej Rozmieszczenie i wtasuj kopie tej karty na spód Twojej talii.",
+            "Info": "Zadaj 4 pkt obrażeń losowemu wrogowi. Kiedy odrzucisz te kartę, aktywuj jej Rozmieszczenie i wtasuj wilczego wojownika do Twojej talii.",
             "Flavor": ""
         },
         "70040": {
@@ -3114,7 +3365,7 @@
         },
         "70070": {
             "Name": "Rezuni",
-            "Info": "Jednorazowa: Jeśli w Twojej startowej talii są wyłącznie brązowe karty, stwórz Kundli ze Spalli i wtasuj 2 kopie Kundli ze Spalli do Twojej talii.\n(Kundle ze Spalii; 5 pkt siły; Jednorazowa. Rozmieszczenie: Zobacz 2 brązowe jednostki z Twojej talii i zagraj jedną z nich)",
+            "Info": "Jednorazowa: Jeśli w Twojej startowej talii są wyłącznie brązowe karty, stwórz Kundli ze Spalli i wtasuj 2 kopie Kundli ze Spalli do Twojej talii.",
             "Flavor": "Kupca weźmiem na męki, a kobyły na targ."
         },
         "70071": {
@@ -3189,7 +3440,7 @@
         },
         "70089": {
             "Name": "Artis",
-            "Info": "Rozmieszczenie: Zadaj 7 pkt obrażeń wrogowi. Jeśli cel zostanie zniszczony, stwórz Ofiarowanie Kultysty w przeciwnym rzędzie. \n (Ofiarowanie Kultysty Po dwóch turach na początku tury wygnaj tę kartę. Zemsta: Wylecz najmocniej ranną jednostkę przeciwnika i wzmocnij ją o 1.)",
+            "Info": "Rozmieszczenie: Zadaj 7 pkt obrażeń wrogowi. Jeśli cel zostanie zniszczony, stwórz Ofiarowanie Kultysty w przeciwnym rzędzie.",
             "Flavor": "Nie wszystkich kapłanów Svalbloda udało się przegnać. Niestety."
         },
         "70090": {
@@ -3274,7 +3525,7 @@
         },
         "70106": {
             "Name": "Jaja Endriagi",
-            "Info": "Rozmieszczenie: Stwórz 1 bazową kopie tej karty po lewej stronie.\nZemsta: Stwórz Larwe endriagi w tym samym miejscu. Po 3 turach na początku tury zniszcz te jednostkę.\n(Larwa Endriagi; 5 pkt siły; Po 3 rundach na koniec rundy, przemień się w Endriage Wojownika)\n(Endriaga Wojownik; 7 pkt siły)",
+            "Info": "Rozmieszczenie: Stwórz 1 bazową kopie tej karty po lewej stronie.\nZemsta: Stwórz Larwe endriagi w tym samym miejscu. Po 3 turach na początku tury zniszcz te jednostkę.",
             "Flavor": "Kiedy się je znajdzie, na wszelki wypadek lepiej puścić z dymem cały las. A potem uciekać, gdzie pieprz rośnie."
         },
         "70107": {
@@ -3409,7 +3660,7 @@
         },
         "70134": {
             "Name": "Adeptka Klanu Kruka",
-            "Info": "Rozmieszczenie: Na koniec tury, jeśli w tym rzędzie nie ma wrony stwórz wrone po prawej stronie (Wrona; 2 siły; Zemsta: Zadaj 3pkt obrażeń losowemu wrogowi)",
+            "Info": "Rozmieszczenie: Na koniec tury, jeśli w tym rzędzie nie ma wrony stwórz wrone po prawej stronie.",
             "Flavor": "Uczeni mężowie twierdzą, że zwierzęta to bezrozumne automatony. Uczeni mężowie pieprzą od rzeczy."
         },
         "70135": {
@@ -3469,7 +3720,7 @@
         },
         "70146": {
             "Name": "Gael",
-            "Info": "Deal 5 Damage to two enemy units each.",
+            "Info": "Rozmieszczenie, Wybierz: Zadaj 5 pkt obrażeń dwóm wrogom ,lub zadaj wrogowi 8pkt obrażeń.",
             "Flavor": "Nie tylko sroki lubią błyskotki."
         },
         "70147": {
@@ -3544,7 +3795,7 @@
         },
         "70161": {
             "Name": "Azar Javed",
-            "Info": "Spwan 2 Scarab. (Scarab:1-When your opponent passes, move to the opposite row.)",
+            "Info": "Spwan 2 Scarab.",
             "Flavor": "Specjalnością Azara Javeda jest żywioł ognia. Czarodziej nie tylko włada mocami płomieni z wielką biegłością – można rzec, że ogień stał się częścią jego istoty."
         },
         "70162": {
@@ -3596,6 +3847,26 @@
             "Name": "Pas Olbrzyma",
             "Info": "Wzmocnij sojusznika o jego bazową Siłę. Jeśli to Ogroid, najpierw Ulepsz go o 2.",
             "Flavor": "Wytrzymały skórzany pas, najwyraźniej uszyty dla tytana, a jednak pasuje każdemu, kto go przymierzy. Choć powoduje, że noszący go staje się silny niczym gigant, nie zwiększa jego postury."
+        },
+        "70172": {
+            "Name": "Księżniczka",
+            "Info": "Rozmieszczenie: Stwórz Niedźwiedzia. Jeśli w tym rzędzie jest Wiedźmin zamiast tego stwórz Wściekłego Niedźwiedzia. ",
+            "Flavor": "Masz najważniejszą ceche, jakie powinna mieć każda Płotka - niewiele mówisz. "
+        },
+        "70173": {
+            "Name": "Czatownicza Zasadzka",
+            "Info": "Wybierz sojusznika. Wzmonij go o 5 pkt I przenieś do rzędu poniżej. Wybierz wroga zadaj mu 5 pjt obrażeń I przenieś go do rzędu walki wręcz.",
+            "Flavor": "Jedzie, jedzie pan, na koniku hyc, hyc, elf go trafił, bo potrafił, na gościńcu nic, nic."
+        },
+        "70174": {
+            "Name": "Mag Infiltrator",
+            "Info": "Szpieg \nRozmieszczenie: Odkryj dwie karty w ręce przeciwnika, następnie stwórz I zagraj kopie innej brązowej karty i w ręce przeciwnika. ",
+            "Flavor": "W wolnym czasie lubi się zgrywać, kradnąc ludziom onuce – tylko po jednej z każdej pary – i podmieniając część ubrań na mniejsze."
+        },
+        "70175": {
+            "Name": "Wnykarz",
+            "Info": "Wezwij kopię tej jednostki do tego rzędu kiedy zostanie aktywowana sojusznicza zasadzka. ",
+            "Flavor": "Z nimi zawsze to samo: aaach, nie czuję nóg!. Ale żeby ktokolwiek docenił rzemiosło... Czy proszę o tak wiele?"
         },
         "80001": {
             "Name": "Auberon:King",
