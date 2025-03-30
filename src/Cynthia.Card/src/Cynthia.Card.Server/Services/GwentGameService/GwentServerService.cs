@@ -81,30 +81,30 @@ namespace Cynthia.Card.Server
                 user.OwnedTitles = loginUser.OwnedTitles;
                 _users.Add(user.ConnectionId, user);
                 // give all default avatars
-                await AddAvatar(user.UserName, "NoAvatar");
-                await AddAvatar(user.UserName, "GeraltOfRivia");
-                await AddAvatar(user.UserName, "TrissMerigold");
-                await AddAvatar(user.UserName, "Yennefer");
+                await AddAvatar(user.PlayerName, "NoAvatar");
+                await AddAvatar(user.PlayerName, "GeraltOfRivia");
+                await AddAvatar(user.PlayerName, "TrissMerigold");
+                await AddAvatar(user.PlayerName, "Yennefer");
                 // give the seasonal avatars - delete section after season
-                await AddAvatar(user.UserName, "ClassicGeralt");
+                await AddAvatar(user.PlayerName, "ClassicGeralt");
                 // give all default borders
-                await AddBorder(user.UserName, "NoBorder");
+                await AddBorder(user.PlayerName, "NoBorder");
                 // give all default titles
-                await AddTitle(user.UserName, "CARDSMITH");
+                await AddTitle(user.PlayerName, "CARDSMITH");
                 // give the seasonal titles - delete section after season
-                await AddTitle(user.UserName, "PIONEER");
+                await AddTitle(user.PlayerName, "PIONEER");
                 if (user.CurrentBorder == null)
                 {
-                    await UpdateBorder(user.UserName, "NoBorder");
+                    await UpdateBorder(user.PlayerName, "NoBorder");
                 }
                 if (user.CurrentAvatar == null)
                 {
-                    await UpdateAvatar(user.UserName, "NoAvatar");
+                    await UpdateAvatar(user.PlayerName, "NoAvatar");
                 }
                 // if no title is set, set the Cardsmith avatar
                 if (user.CurrentTitle == null)
                 {
-                   await UpdateTitle(user.UserName, "CARDSMITH");
+                   await UpdateTitle(user.PlayerName, "CARDSMITH");
                 }
                 if (user.GGsReceived == null)
                 {
@@ -150,88 +150,55 @@ namespace Cynthia.Card.Server
         }
         public async Task<bool> UpdateAvatar(string playername, string AvatarID) // updates the avatar of the user
         {
-        var connectionId = _users.Single(x => x.Value.UserName == playername).Value.ConnectionId;
-        if (!_users.ContainsKey(connectionId))
-        {
-            return true;
-        }
-        var user = _users[connectionId];
-        _databaseService.UpdateAvatar(_users[connectionId].UserName, AvatarID);
-        user.CurrentAvatar = AvatarID;
+        _databaseService.UpdateAvatar(playername, AvatarID);
         return true;
         }
 
         // adds an avatar to the list of owned avatars of a user
         public async Task<bool> AddAvatar(string username, string AvatarID)
         {
-        var connectionId = _users.Single(x => x.Value.UserName == username).Value.ConnectionId;
-        if (!_users.ContainsKey(connectionId))
-            {
-                return false;
-            }
-        _databaseService.AddAvatar(_users[connectionId].UserName, AvatarID);
+        _databaseService.AddAvatar(username, AvatarID);
         return true;
         }
         // updates the border of the user
-        public async Task<bool> UpdateBorder(string playername, string BorderID) 
+        public async Task<bool> UpdateBorder(string username, string BorderID) 
         {
-        var connectionId = _users.Single(x => x.Value.UserName == playername).Value.ConnectionId;
-        if (!_users.ContainsKey(connectionId))
-        {
-            return true;
-        }
-        var user = _users[connectionId];
-        _databaseService.UpdateBorder(_users[connectionId].UserName, BorderID);
-        user.CurrentBorder = BorderID;
+        _databaseService.UpdateBorder(username, BorderID);
         return true;
         }
         // updates the title of the user
-        public async Task<bool> UpdateTitle(string playername, string TitleID) 
+        public async Task<bool> UpdateTitle(string username, string TitleID) 
         {
-        var connectionId = _users.Single(x => x.Value.UserName == playername).Value.ConnectionId;
-        if (!_users.ContainsKey(connectionId))
-        {
-            return true;
-        }
-        var user = _users[connectionId];
-        _databaseService.UpdateTitle(_users[connectionId].UserName, TitleID);
-        user.CurrentTitle = TitleID;
+        _databaseService.UpdateTitle(username, TitleID);
         return true;
         }
 
         // adds a border to the list of owned borders of a user
         public async Task<bool> AddBorder(string username, string BorderID)
         {
-        var connectionId = _users.Single(x => x.Value.UserName == username).Value.ConnectionId;
-        if (!_users.ContainsKey(connectionId))
-            {
-                return false;
-            }
-        _databaseService.AddBorder(_users[connectionId].UserName, BorderID);
+        _databaseService.AddBorder(username, BorderID);
         return true;
         }
 
         // adds a title to the list of owned titles of a user
         public async Task<bool> AddTitle(string username, string TitleID)
         {
-        var connectionId = _users.Single(x => x.Value.UserName == username).Value.ConnectionId;
-        if (!_users.ContainsKey(connectionId))
-            {
-                return false;
-            }
-        _databaseService.AddTitle(_users[connectionId].UserName, TitleID);
+        _databaseService.AddTitle(username, TitleID);
         return true;
         }
 
         public async Task<bool> SendGG(string MyName, string EnemyName) // send your name to the opponent and trigger GG
         {
-            if (_users.Any(x => x.Value.UserName == EnemyName))
+            if (_users.Any(x => x.Value.PlayerName == EnemyName))
             {
-                var connectionId = _users.Single(x => x.Value.UserName == EnemyName).Value.ConnectionId;
-                await _hub.Clients.Client(connectionId).SendAsync("DisplayGG", MyName);
-                
-                _databaseService.UpdateGGCounter(EnemyName); // update the GG couter and if relevant give cosmetics
+                var connectionId = _users.Single(x => x.Value.PlayerName == EnemyName).Value.ConnectionId;
+                if (!_users.ContainsKey(connectionId))
+                {
+                    return false;
+                }
                 var user = _users[connectionId];
+                await _hub.Clients.Client(connectionId).SendAsync("DisplayGG", MyName);
+                _databaseService.UpdateGGCounter(EnemyName); // update the GG couter and if relevant give cosmetics      
                 if (user.GGsReceived >=100 )
                 {
                     AddBorder(EnemyName, "G_Phoenix");
@@ -250,13 +217,18 @@ namespace Cynthia.Card.Server
         }
         public async Task<bool> SendTaunt(string EnemyName, string TauntID) // 
         {
-            var connectionId = _users.Single(x => x.Value.UserName == EnemyName).Value.ConnectionId;
-            if (!_users.ContainsKey(connectionId))
+            if (_users.Any(x => x.Value.PlayerName == EnemyName))
             {
-                return false;
+
+                var connectionId = _users.Single(x => x.Value.PlayerName == EnemyName).Value.ConnectionId;
+                if (!_users.ContainsKey(connectionId))
+                {
+                    return false;
+                }
+                await _hub.Clients.Client(connectionId).SendAsync("PlayTaunt", TauntID);
+                return true;
             }
-            await _hub.Clients.Client(connectionId).SendAsync("PlayTaunt", TauntID);
-            return true;
+            return false;
         }
         public async Task<bool> StopMatch(string connectionId)
         {
