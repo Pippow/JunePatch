@@ -11931,7 +11931,7 @@ namespace Cynthia.Card
                 {
                     CardId ="70046", //Svalblod Fanatic
                     Name="斯瓦勃洛狂信者",
-                    Strength=10,
+                    Strength=9,
                     Group=Group.Copper,
                     Faction = Faction.Skellige,
                     CardUseInfo = CardUseInfo.MyRow,
@@ -13371,7 +13371,7 @@ namespace Cynthia.Card
                 {
                     CardId ="70092", //Svalblod Brawler
                     Name="斯瓦勃洛争斗者",
-                    Strength=8,
+                    Strength=7,
                     Group=Group.Copper,
                     Faction = Faction.Skellige,
                     CardUseInfo = CardUseInfo.MyRow,
@@ -13381,7 +13381,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[]{ Categorie.Cultist},
                     Flavor = "史凯利格容不下罪犯和无赖……他们的罪行必须偿还。",
-                    Info = "部署：对一个敌军单位造成两倍于场上“倾盆大雨”数量的伤害。",
+                    Info = "部署：对一个敌军单位造成两倍于场上“倾盆大雨”数量的伤害，并获得两倍于场上“倾盆大雨”数量的护甲。",
                     CardArtsId = "202288",
 					LinkedCards=new List<String> {},
                 }
