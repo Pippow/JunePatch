@@ -51,6 +51,20 @@ namespace Cynthia.Card.Server
         public async Task<UserInfo> QueryUserInfo(string username, string password)
         {
             var loginUser = _databaseService.Login(username, password);
+            // give trinkets linked to a counter such as GG
+            if (loginUser.GGsReceived >=100 )
+            {
+                await AddBorder(loginUser.PlayerName, "G_Phoenix");
+            }
+            if (loginUser.GGsReceived >=200 )
+            {
+                await AddAvatar(loginUser.PlayerName, "Phoenix");
+            }
+            if (loginUser.GGsReceived >=500 )
+            {
+                await AddTitle(loginUser.PlayerName, "GOODGAMER");
+            }
+            //
             return loginUser;
         }
 
@@ -86,13 +100,15 @@ namespace Cynthia.Card.Server
                 await AddAvatar(user.PlayerName, "TrissMerigold");
                 await AddAvatar(user.PlayerName, "Yennefer");
                 // give the seasonal avatars - delete section after season
-                await AddAvatar(user.PlayerName, "ClassicGeralt");
+                    // await AddAvatar(user.PlayerName, "ClassicGeralt");
                 // give all default borders
                 await AddBorder(user.PlayerName, "NoBorder");
                 // give all default titles
                 await AddTitle(user.PlayerName, "CARDSMITH");
                 // give the seasonal titles - delete section after season
-                await AddTitle(user.PlayerName, "PIONEER");
+                    // await AddTitle(user.PlayerName, "PIONEER");
+
+                // if no title, avatar or border is set, set the default ones
                 if (user.CurrentBorder == null)
                 {
                     await UpdateBorder(user.PlayerName, "NoBorder");
@@ -101,7 +117,6 @@ namespace Cynthia.Card.Server
                 {
                     await UpdateAvatar(user.PlayerName, "NoAvatar");
                 }
-                // if no title is set, set the Cardsmith avatar
                 if (user.CurrentTitle == null)
                 {
                    await UpdateTitle(user.PlayerName, "CARDSMITH");
@@ -225,20 +240,7 @@ namespace Cynthia.Card.Server
                 }
                 var user = _users[connectionId];
                 await _hub.Clients.Client(connectionId).SendAsync("DisplayGG", MyName);
-                _databaseService.UpdateGGCounter(EnemyName); // update the GG couter and if relevant give cosmetics      
-                if (user.GGsReceived >=100 )
-                {
-                    await AddBorder(EnemyName, "G_Phoenix");
-                }
-                if (user.GGsReceived >=200 )
-                {
-                    await AddAvatar(EnemyName, "Phoenix");
-                }
-                if (user.GGsReceived >=500 )
-                {
-                    await AddTitle(EnemyName, "GOODGAMER");
-                }
-                return false;
+                _databaseService.UpdateGGCounter(EnemyName); // update the GG couter
             }
             return false;
         }
@@ -628,7 +630,12 @@ may come back in the future.
 This game is permanently free and open-source.
 To download the latest version of the game and interact with the community, please visit our Discord: https://discord.gg/Dw9sKgaUZN
 
-Welcome to DIY Gwent Season 1! Send taunts, customize your Avatar, Border and Title and unlock the exlusive seasonal cosmetics!
+Welcome to DIY Gwent Season 2!
+
+Patch notes:
+- Svalblod brawler: -1 str, gain one armor for each rain on the board
+- Lyrian Scyntmen: can now buff silvers
+- Svalblod Fanatic: -1
 
 AI Matchmaking:
 ai: Geralt Ciri ai1: Recruit Training ai2: Avallac'h ai3: King Oberon ai4: Iron Falcon Mercenary ai5: Dragon Hunter
@@ -710,16 +717,17 @@ When other players are available, player matchmaking will be prioritized. Add #f
                         rank = "Rank6border";
                         ranktitle = "APPRENTICE";
                         break;
-                    case int i when i >= 3800 && i < 3950:
+                    case int i when i >= 3800 && i < 3850:
                         rank = "Rank9border";
                         ranktitle = "JOURNEYMAN";
                         break;
-                    case int i when i >= 3950 && i < 4000:
+                    case int i when i >= 3850 && i < 3950:
+                    // remove after season 2
+                        rankavatar = "CirALt";
+                        break;
+                    case int i when i >= 3950 && i < 4100:
                         rank = "Rank12border";
                         ranktitle = "ADEPT";
-                        break;
-                    case int i when i >= 4000 && i < 4100: // remove after season 1
-                        rankavatar = "Dandelionthewitcher2";
                         break;
                     case int i when i >= 4100 && i < 4250:
                         rank = "Rank15border";
@@ -728,7 +736,7 @@ When other players are available, player matchmaking will be prioritized. Add #f
                     case int i when i >= 4250 && i < 4400:
                         rank = "Rank18border";
                         ranktitle = "MASTER";
-                        rankavatar = "TrissSorceress"; // remove after season 1
+                        rankavatar = "YenneferFury"; 
                         break;
                     default:
                         rank = "Rank21border";
