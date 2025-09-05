@@ -51,6 +51,19 @@ namespace Cynthia.Card.Server
         public async Task<UserInfo> QueryUserInfo(string username, string password)
         {
             var loginUser = _databaseService.Login(username, password);
+            if (loginUser == null) return null;
+
+            // if user is online, attach any pending newly unlocked trinkets
+            var onlineUser = _users.Values.FirstOrDefault(x => x.UserName == username);
+            if (onlineUser != null && onlineUser.NewlyUnlockedTrinkets != null)
+            {
+                loginUser.NewlyUnlockedTrinkets = new NewlyUnlockedTrinkets
+                {
+                    NewAvatars = new List<string>(onlineUser.NewlyUnlockedTrinkets.NewAvatars),
+                    NewBorders = new List<string>(onlineUser.NewlyUnlockedTrinkets.NewBorders),
+                    NewTitles = new List<string>(onlineUser.NewlyUnlockedTrinkets.NewTitles)
+                };
+            }
             // give trinkets linked to a counter such as GG
             if (loginUser.GGsReceived >= 100)
             {
@@ -133,6 +146,18 @@ namespace Cynthia.Card.Server
                 {
                     await UpdateTitle(user.PlayerName, "CARDSMITH");
                 }
+                
+                // Copy newly unlocked trinkets to the returned UserInfo (map buffer -> DTO)
+                if (user.NewlyUnlockedTrinkets != null)
+                {
+                    loginUser.NewlyUnlockedTrinkets = new NewlyUnlockedTrinkets
+                    {
+                        NewAvatars = new List<string>(user.NewlyUnlockedTrinkets.NewAvatars),
+                        NewBorders = new List<string>(user.NewlyUnlockedTrinkets.NewBorders),
+                        NewTitles = new List<string>(user.NewlyUnlockedTrinkets.NewTitles)
+                    };
+                }
+                
                 InovkeUserChanged();
             }
             return loginUser;
@@ -190,9 +215,18 @@ namespace Cynthia.Card.Server
         // adds an avatar to the list of owned avatars of a user
         public async Task<bool> AddAvatar(string playername, string AvatarID)
         {
-            _databaseService.AddAvatar(playername, AvatarID);
+            var wasAdded = _databaseService.AddAvatar(playername, AvatarID);
+            if (wasAdded)
+            {
+                // Track newly unlocked avatar for online users
+                var onlineUser = _users.Values.FirstOrDefault(x => x.PlayerName == playername);
+                if (onlineUser != null)
+                {
+                    onlineUser.NewlyUnlockedTrinkets.NewAvatars.Add(AvatarID);
+                }
+            }
             await Task.CompletedTask;
-            return true;
+            return wasAdded;
         }
         // updates the border of the user
         public async Task<bool> UpdateBorder(string playername, string BorderID)
@@ -230,17 +264,35 @@ namespace Cynthia.Card.Server
         // adds a border to the list of owned borders of a user
         public async Task<bool> AddBorder(string username, string BorderID)
         {
-            _databaseService.AddBorder(username, BorderID);
+            var wasAdded = _databaseService.AddBorder(username, BorderID);
+            if (wasAdded)
+            {
+                // Track newly unlocked border for online users
+                var onlineUser = _users.Values.FirstOrDefault(x => x.PlayerName == username);
+                if (onlineUser != null)
+                {
+                    onlineUser.NewlyUnlockedTrinkets.NewBorders.Add(BorderID);
+                }
+            }
             await Task.CompletedTask;
-            return true;
+            return wasAdded;
         }
 
         // adds a title to the list of owned titles of a user
         public async Task<bool> AddTitle(string username, string TitleID)
         {
-            _databaseService.AddTitle(username, TitleID);
+            var wasAdded = _databaseService.AddTitle(username, TitleID);
+            if (wasAdded)
+            {
+                // Track newly unlocked title for online users
+                var onlineUser = _users.Values.FirstOrDefault(x => x.PlayerName == username);
+                if (onlineUser != null)
+                {
+                    onlineUser.NewlyUnlockedTrinkets.NewTitles.Add(TitleID);
+                }
+            }
             await Task.CompletedTask;
-            return true;
+            return wasAdded;
         }
 
         public async Task<bool> SendGG(string MyName, string EnemyName) // send your name to the opponent and trigger GG
@@ -410,10 +462,10 @@ namespace Cynthia.Card.Server
             InovkeUserChanged();
         }
 
-        public async Task<string> GetLatestVersion(string connectionId)
+        public async Task<string> GetLatestVersion(string connectionId) // unused function
         {
             await Task.CompletedTask;
-            return "2.0.3";
+            return "2.1.0";
         }
 
         public async Task<string> GetNotes(string connectionId)
@@ -653,6 +705,7 @@ Patch notes:
 - Various bug fixes to Cosmetics, Coinflip display and translations (thanks to the community!)
 - Hidden the unused buttons
 - Various improvements to the 'right-click' menu
+- Thousands of new Polish voicelines added
 
 AI Matchmaking:
 ai: Geralt Ciri ai1: Recruit Training ai2: Avallac'h ai3: King Oberon ai4: Iron Falcon Mercenary ai5: Dragon Hunter
@@ -673,7 +726,7 @@ When other players are available, player matchmaking will be prioritized. Add #f
         public async Task<string> GetLatestClientVersion(string connectionId)
         {
             await Task.CompletedTask;
-            return @"2.0.3";
+            return @"2.1.0";
         }
         //-------------------------------------------------------------------------
         public int GetUserCount()
@@ -767,7 +820,7 @@ When other players are available, player matchmaking will be prioritized. Add #f
             await AddAvatar(PlayerName, rankavatar);
         }
 
-        public void InvokeGameOver(GameResult result, bool isOnlyShow, bool isCountMMR)
+        public async void InvokeGameOver(GameResult result, bool isOnlyShow, bool isCountMMR)
         {
             // if (_env.IsProduction())
             // {
@@ -813,8 +866,8 @@ When other players are available, player matchmaking will be prioritized. Add #f
                 // if any player score more than a million points in a casual match, give to both the title "$$$MILLIONAIRE$$$"
                 if (result.RedScore.Any(x => x >= 1000000) || result.BlueScore.Any(x => x >= 1000000))
                 {
-                    _databaseService.AddTitle(result.RedPlayerName, "$$$MILLIONAIRE$$$");
-                    _databaseService.AddTitle(result.BluePlayerName, "$$$MILLIONAIRE$$$");
+                    await AddTitle(result.RedPlayerName, "$$$MILLIONAIRE$$$");
+                    await AddTitle(result.BluePlayerName, "$$$MILLIONAIRE$$$");
                 }
             }
             lock (ResultList)
@@ -939,5 +992,13 @@ When other players are available, player matchmaking will be prioritized. Add #f
         public IList<Tuple<string, int>> GetAllMMR(int offset, int limit) => _databaseService.QueryAllMMR(offset, limit);
 
         public IList<Tuple<string, int>> GetAllHighestMMR(int offset, int limit) => _databaseService.QueryAllHighestMMR(offset, limit);
+
+        public async Task<bool> ClearNewlyUnlockedTrinkets(string username)
+        {
+            var onlineUser = _users.Values.FirstOrDefault(x => x.UserName == username);
+            onlineUser?.NewlyUnlockedTrinkets.Clear();
+            await Task.CompletedTask;
+            return true;
+        }
     }
 }

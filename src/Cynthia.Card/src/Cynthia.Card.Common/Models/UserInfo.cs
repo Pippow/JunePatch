@@ -24,5 +24,6 @@ namespace Cynthia.Card
         public string CurrentTitle { get; set; }
         public int GGsReceived { get; set; }
         public int GamesOver200 { get; set; }
+        public NewlyUnlockedTrinkets NewlyUnlockedTrinkets { get; set; }
     }
 }
