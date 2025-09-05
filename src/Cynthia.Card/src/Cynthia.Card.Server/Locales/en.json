@@ -682,7 +682,7 @@
         },
         "12013": {
             "Name": "Lambert: Swordmaster",
-            "Info": "Deploy: Deal 4 Damage to all copies of an enemy.",
+            "Info": "Deploy: Deal 5 Damage to all copies of an enemy.",
             "Flavor": "Go teach your grandma to suck eggs."
         },
         "12014": {
@@ -823,7 +823,7 @@
         "12041": {
             "Name": "Shupe's Bizarre Adventure",
             "Info": "If your starting deck has no duplicates, send Shupe on an adventure.",
-            "Flavor": ""
+            "Flavor": "Shupe is known to have quite the imagination. What other troll would look at scraps of paper and see rocks?"
         },
         "12042": {
             "Name": "Sihil",
@@ -953,7 +953,7 @@
         "13025": {
             "Name": "Artefact Compression",
             "Info": "Transform a Bronze or Silver unit into a Jade Figurine.",
-            "Flavor": ""
+            "Flavor": "The figurine expanded in a flash, pulsing and throbbing, changing its shape and structure like a puff of smoke crawling over the floor. Beams of light revealed movement and hardening materials. A moment later, in the center of the magic circle a human form suddenly appeared."
         },
         "13026": {
             "Name": "Bekker's Dark Mirror",
@@ -1078,7 +1078,7 @@
         "14006": {
             "Name": "Bloodcurdling Roar",
             "Info": "Destroy an ally, then Spawn a Bear.",
-            "Flavor": ""
+            "Flavor": "First we ran into a bear... things just got worse from there."
         },
         "14007": {
             "Name": "Dimeritium Shackles",
@@ -1248,7 +1248,7 @@
         "15013": {
             "Name": "Clear Skies",
             "Info": "Boost all Damaged allies under Hazards by 2 and clear all Hazards from your side.",
-            "Flavor": ""
+            "Flavor": "The sun's shinin', Dromle! The sun's shinin'! Maybe there's hope after all…"
         },
         "15014": {
             "Name": "Rally",
@@ -1258,7 +1258,7 @@
         "21001": {
             "Name": "Dagon",
             "Info": "Deploy: Spawn Impenetrable Fog or Torrential Rain.",
-            "Flavor": ""
+            "Flavor": "That is not dead which can eternal lie, and with strange aeons even death may die."
         },
         "21002": {
             "Name": "Arachas Queen",
@@ -1583,7 +1583,7 @@
         "24025": {
             "Name": "Barbegazi",
             "Info": "Deploy: Consume an ally and Boost self by its Power.\nResilience.",
-            "Flavor": ""
+            "Flavor": "What moments before looked like round rocks among the stalagmites now stared at him with enormous, bright, menacing eyes."
         },
         "24026": {
             "Name": "Ekimmara",
@@ -1648,7 +1648,7 @@
         "24038": {
             "Name": "Moonlight",
             "Info": "Spawn Full Moon, or Blood Moon.",
-            "Flavor": ""
+            "Flavor": "When the moon is full, nightmares crawl out of all the dark nooks and crannies of the world."
         },
         "25001": {
             "Name": "Lesser D'ao",
@@ -1803,7 +1803,7 @@
         "33003": {
             "Name": "The Guardian",
             "Info": "Deploy: Add a Lesser Guardian to the top of your opponent's deck.",
-            "Flavor": ""
+            "Flavor": "Stone fists to stop intruders armed with swords. Ironclad logic to stop those armed with lies."
         },
         "33004": {
             "Name": "Cantarella",
@@ -1898,7 +1898,7 @@
         "33022": {
             "Name": "Nilfgaardian Gate",
             "Info": "Play a Bronze or Silver Officer from your deck and Boost it by 1.",
-            "Flavor": ""
+            "Flavor": "Don't think they're open for visitors..."
         },
         "33023": {
             "Name": "Slave Driver",
@@ -2017,7 +2017,7 @@
         },
         "34023": {
             "Name": "Daerlan Soldier",
-            "Info": "Whenever you Reveal this unit, play it on a random row and draw a card.",
+            "Info": "Whenever you Reveal this unit, summon it to a random row and draw a card.",
             "Flavor": "Learned a lot at Braibant Military Academy. How to scrub potatoes, for instance."
         },
         "34024": {
@@ -2163,7 +2163,7 @@
         "42013": {
             "Name": "Philippa Eilhart",
             "Info": "Deploy: Deal 5 Damage to an enemy, then deal 4, 3, 2 and 1 Damage to random enemies.",
-            "Flavor": ""
+            "Flavor": "Soon the power of kings will wither, and the Lodge shall seize its rightful place."
         },
         "43001": {
             "Name": "Thaler",
@@ -2333,7 +2333,7 @@
         "44013": {
             "Name": "Redanian Knight-Elect",
             "Info": "On turn end, if this unit has Armor, Boost adjacent units by 1.\n2 Armor.",
-            "Flavor": ""
+            "Flavor": "Not wealth or fame but intentions true -- that’s what makes a hero of you!"
         },
         "44014": {
             "Name": "Reinforced Ballista",
@@ -2357,7 +2357,7 @@
         },
         "44018": {
             "Name": "Battering Ram",
-            "Info": "Deploy: Deal 3 Damage.\nIf the unit was destroyed, deal 3 Damage to another unit.\nCrewed: Increase initial Damage by 1.",
+            "Info": "Deploy: Deal 3 Damage to an enemy.\nIf the unit was destroyed, deal 3 Damage to another unit.\nCrewed: Increase initial Damage by 1.",
             "Flavor": "Not gonna open up, eh? Guess we gotta knock harder."
         },
         "44019": {
@@ -2372,8 +2372,8 @@
         },
         "44021": {
             "Name": "Reaver Hunter",
-            "Info": "Deploy: Boost all copies of this unit by 1, if in hand, deck or on the board.\nRepeat its ability whenever a copy of this unit is played.",
-            "Flavor": ""
+            "Info": "Deploy: Boost all friendly copies of this unit by 1, if in hand, deck or on the board.\nRepeat its ability whenever a friendly copy of this unit is played.",
+            "Flavor": "See this here tattoo? 'At's me, hackin' at a dragon. A DRAGON, m'lady."
         },
         "44022": {
             "Name": "Temerian Drummer",
@@ -2438,7 +2438,7 @@
         "44034": {
             "Name": "Bloody Flail",
             "Info": "Deal 5 Damage and Spawn a Specter on a random row.",
-            "Flavor": ""
+            "Flavor": "There are weapons banned in all the Northern Realms, for the wounds they deal are horrible beyond all imagining."
         },
         "45001": {
             "Name": "Specter",
@@ -2582,7 +2582,7 @@
         },
         "53009": {
             "Name": "Aelirenn",
-            "Info": "When 5 Elven allies are on the board, Summon this unit on a random row.",
+            "Info": "On turn end, if there are 5 Elven allies on the board, Summon this unit on a random row.",
             "Flavor": "Better to die standing than to live on bent knee."
         },
         "53010": {
@@ -2638,7 +2638,7 @@
         "53020": {
             "Name": "Pit Trap",
             "Info": "Apply a Hazard to an enemy row that deals 3 Damage to units on contact.",
-            "Flavor": ""
+            "Flavor": "Simple, cheap and deadly efficient - no wonder it's one of the Scoia'tael's favorite traps."
         },
         "53021": {
             "Name": "Mahakam Horn",
@@ -2828,7 +2828,7 @@
         "61004": {
             "Name": "Bran Tuirseach",
             "Info": "Deploy: Discard up to 3 cards from your deck and Strengthen them by 1.",
-            "Flavor": ""
+            "Flavor": "He lived life on his own terms—died on them, too."
         },
         "62001": {
             "Name": "Olaf",
@@ -3257,7 +3257,7 @@
         },
         "70012": {
             "Name": "Toussaint Knight-Errant",
-            "Info": "Deploy: For each card advantage your opponent has, Boost self by 4.",
+            "Info": "Deploy: Boost self by 4 for each additional non leader card your opponent has in hand compared to you.",
             "Flavor": "White steed, shiny-arse armor... Aye, 'tis a knight-errant alright. Fetch the coffin maker!"
         },
         "70013": {
@@ -3348,7 +3348,7 @@
         "70039": {
             "Name": "Terror Crew",
             "Info": "Deal 4 Damage to a random enemy. When Discarded, trigger its ability and add 1 Terror Crew Plunderers to your deck.",
-            "Flavor": ""
+            "Flavor": "But dear Skelligers, what use do you have for axes? There are no trees in the sea…"
         },
         "70040": {
             "Name": "Terror Crew Plunderer",
@@ -3468,7 +3468,7 @@
         "70084": {
             "Name": "Olgierd Immortal",
             "Info": "Deathwish: On turn end, Resurrect this unit on the same location.",
-            "Flavor": ""
+            "Flavor": "All of my dreams have come true. Unfortunately."
         },
         "70085": {
             "Name": "The Apiarian Phantom",
@@ -3727,7 +3727,7 @@
         },
         "70138": {
             "Name": "Dryad's Caress",
-            "Info": "Play a Bronze or Silver Dryad unit from your deck, then Boost it by the number of Dryad units on your side.",
+            "Info": "Choose a Bronze or Silver Dryad unit from your deck, then Boost it by the number of Dryad units on your side and play it.",
             "Flavor": "Shh, shh... Evelienn va maeth, elaine blath..."
         },
         "70139": {
@@ -3882,7 +3882,7 @@
         },
         "70169": {
             "Name": "Nekker Swarm",
-            "Info": "On turn end, if no enemy is stronger than the strongest Ogroid ally, reduce the counter of the last copy of this unit by 1. When it reaches 0, Summon self on a random row and Boost a random ally by 1.",
+            "Info": "When in deck, on turn end, if this is the bottom copy of this unit, and if no enemy is stronger than the strongest ogroid ally, reduce self's counter by 1. When it reaches 0, summon self on a random row and Boost a random ally by 1.",
             "Flavor": ""
         },
         "70170": {

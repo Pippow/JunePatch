@@ -167,7 +167,7 @@
         "IngameMenu_RoundWonTitle": "Wygrałeś TĘ RUNDĘ!",
         "IngameMenu_RoundLostTitle": "PRZECIWNIK WYGRAŁ TĘ RUNDĘ!",
         "IngameMenu_RoundDrawTitle": "REMIS!",
-        "CoinSeparate":"Oddzielna 20 (+8)",
+        "CoinSeparate":"Osobno 20 (+8)",
         "CoinAdded":"Dodana 20 (28)",
         "CoinStyle":"Styl monety",
         "DiscardConfirmTitle":"Potwierdzasz odrzucenie?",
@@ -823,7 +823,7 @@
         "12041": {
             "Name": "Przygody Sklepa",
             "Info": "Jeśli w twojej talii początkowej nie ma duplikatów, wyślij Sklepa na spotkanie przygody.",
-            "Flavor": ""
+            "Flavor": "Sklep jest znany z tego, że ma niezłą wyobraźnię. Jaki inny troll patrzyłby na skrawki papieru i widział kamienie?"
         },
         "12042": {
             "Name": "Sihil",
@@ -953,7 +953,7 @@
         "13025": {
             "Name": "Zaklęcie Kompresji",
             "Info": "Przemień brązową lub srebrną jednostkę w Jadeitową Figurkę.",
-            "Flavor": ""
+            "Flavor": "Figurka rosła błyskawicznie, pulsując i tętniąc, zmieniała strukturę i kształt niczym pełzający po posadzce obłok dymu. W smugach blasku pojawiły się ruch i twardniejąca materia. Jeszcze moment, a w centrum magicznych kół pokazała się nagle postać ludzka."
         },
         "13026": {
             "Name": "Zwierciadło Bekkera",
@@ -1248,7 +1248,7 @@
         "15013": {
             "Name": "Czyste Niebo",
             "Info": "Wzmocnij wszystkich rannych sojuszników znajdujących się pod wpływem Zagrożeń o 2 i usuń wszystkie Zagrożenia po swojej stronie.",
-            "Flavor": ""
+            "Flavor": "Piękny dzień, żeby umrzeć."
         },
         "15014": {
             "Name": "Zwiad",
@@ -1258,7 +1258,7 @@
         "21001": {
             "Name": "Dagon",
             "Info": "Rozmieszczenie: Stwórz Gęstą Mgłę lub Ulewny Deszcz.",
-            "Flavor": ""
+            "Flavor": "Nie jest umarłym ten, który spoczywa wiekami, nawet śmierć może umrzeć wraz z dziwnymi eonami."
         },
         "21002": {
             "Name": "Królowa Krabopająków",
@@ -1583,7 +1583,7 @@
         "24025": {
             "Name": "Barbegazi",
             "Info": "Rozmieszczenie: Pochłoń sojusznika i wzmocnij tę jednostkę o jego siłę.\nWytrzymałość",
-            "Flavor": ""
+            "Flavor": "To, co jeszcze przed chwilą brał za leżące u podnóży stalagmitów okrągłe głazy, teraz wybałuszało na niego wielkie, jarzące się ślepia."
         },
         "24026": {
             "Name": "Ekimma",
@@ -1648,7 +1648,7 @@
         "24038": {
             "Name": "Blask Księżyca",
             "Info": "Wybierz: Rzuć Korzyść - Pełnię lub Rzuć Zagrożenie - Krwawy Księżyc.",
-            "Flavor": ""
+            "Flavor": "Gdy księzyc jest w pełni, koszmary wychodzą z ciemnych zakamarków świata."
         },
         "25001": {
             "Name": "Pomniejszy D'ao",
@@ -1803,7 +1803,7 @@
         "33003": {
             "Name": "Strażnik",
             "Info": "Rozmieszczenie: Dodaj Pomniejszego Strażnika na szczycie talii przeciwnika.",
-            "Flavor": ""
+            "Flavor": "Przed intruzami uzbrojonymi w miecze chronią mnie kamienne pięści. Przed uzbrojonymi w kłamstwa, żelazna logika."
         },
         "33004": {
             "Name": "Cantarella",
@@ -1898,7 +1898,7 @@
         "33022": {
             "Name": "Nilfgaardzkie Bramy",
             "Info": "Zagraj brązowego lub srebrnego Oficera ze swojej talii i wzmocnij go o 1.",
-            "Flavor": ""
+            "Flavor": "Chyba nie wpuszczają turystów..."
         },
         "33023": {
             "Name": "Nadzorca Niewolników",
@@ -2017,7 +2017,7 @@
         },
         "34023": {
             "Name": "Daerlańscy Piechurzy",
-            "Info": "Za każdym razem, gdy ujawnisz tę jednostkę, zagraj ją automatycznie w losowym rzędzie i dobierz kartę.",
+            "Info": "Za każdym razem, gdy ujawnisz tę jednostkę, przyzwij ją dolosowego rzędu i dobierz kartę.",
             "Flavor": "Zatruć studnie? Ależ... To by było niehonorowe!"
         },
         "34024": {
@@ -2163,7 +2163,7 @@
         "42013": {
             "Name": "Filippa Eilhart",
             "Info": "Rozmieszczenie: Zrań wroga o 5, a następnie zrań losowych wrogów o 4, 3, 2 i 1. Nie można zranić tego samego wroga dwa razy z rzędu.",
-            "Flavor": ""
+            "Flavor": "Filippa Eilhart, choć bardzo atrakcyjna, była zdecydowanie niemiła."
         },
         "43001": {
             "Name": "Talar",
@@ -2372,8 +2372,8 @@
         },
         "44021": {
             "Name": "Rębacze z Crinfrid",
-            "Info": "Rozmieszczenie: Wzmocnij wszystkie egzemplarze tej jednostki w ręce, talii oraz na polu bitwy o 1. Powtórz tę umiejętność za każdym razem, gdy zagrany zostanie inny egzemplarz tej jednostki.",
-            "Flavor": ""
+            "Info": "Rozmieszczenie: Wzmocnij wszystkie sojusznicze egzemplarze tej jednostki w ręce, talii oraz na polu bitwy o 1. Powtórz tę umiejętność za każdym razem, gdy zagrany zostanie inny sojuszniczy egzemplarz tej jednostki.",
+            "Flavor": "Widzisz ten tatuaż, panienko? To ja, jak walczyłem ze smokiem. Ze SMOKIEM."
         },
         "44022": {
             "Name": "Temerski Werblista",
@@ -2438,7 +2438,7 @@
         "44034": {
             "Name": "Krwawy Korbacz",
             "Info": "Zadaj 5 pkt obrażeń i stwórz w losowym rzędzie Upiora.",
-            "Flavor": ""
+            "Flavor": "Niektóre rodzaje oręża zostały zakazane w Królestwach Północy, tak straszne były rany zadane przy ich pomocy."
         },
         "45001": {
             "Name": "Upiór",
@@ -2638,7 +2638,7 @@
         "53020": {
             "Name": "Wilczy Dół",
             "Info": "Rzuć na wrogi rząd Zagrożenie, które zadaje jednostkom 3 pkt obrażeń przy zetknięciu. ",
-            "Flavor": ""
+            "Flavor": "Prosta, tania a zarazem skuteczna – jedna z ulubionych pułapek Scoia'tael."
         },
         "53021": {
             "Name": "Mahakamski Róg",
@@ -2828,7 +2828,7 @@
         "61004": {
             "Name": "Bran Tuirseach",
             "Info": "Rozmieszczenie: Odrzuć do 3 kart z twojej talii i ulepsz je o 1.",
-            "Flavor": ""
+            "Flavor": "Żył na swoich własnych warunkach – i tak też umarł."
         },
         "62001": {
             "Name": "Olaf",
@@ -3257,7 +3257,7 @@
         },
         "70012": {
             "Name": "Błędny Rycerz z Toussaint",
-            "Info": "Rozmieszczenie: Za każdą kartę przewagi przeciwnika wzmocnij tę jednostkę o 4.",
+            "Info": "Rozmieszczenie: Za każdą kartę przewagi przeciwnika (nie licząc dowódców) wzmocnij tę jednostkę o 4.",
             "Flavor": "Biały rumak, lśniąca zbroja, no i ta lanca... Ta, chyba mamy błędnego rycerza. Szykujcie trumnę!"
         },
         "70013": {
@@ -3348,7 +3348,7 @@
         "70039": {
             "Name": "Pazur Wilka",
             "Info": "Zadaj 4 pkt obrażeń losowemu wrogowi. Kiedy odrzucisz te kartę, aktywuj jej efekt i wtasuj wilczego wojownika do twojej talii.",
-            "Flavor": ""
+            "Flavor": "Ale po co wam te siekiery, mości Skellgijczycy? Na morzu wszak drzew nie ma…"
         },
         "70040": {
             "Name": "Wilczy Wojownik",
@@ -3468,7 +3468,7 @@
         "70084": {
             "Name": "Olgierd Nieśmiertelny",
             "Info": "Zemsta: Na koniec tury Wskrześ tę jednostkę w losowym rzędzie.",
-            "Flavor": ""
+            "Flavor": "Wszystkie moje marzenia się spełniły. Niestety."
         },
         "70085": {
             "Name": "Barciowe Widziadło",
@@ -3527,7 +3527,7 @@
         },
         "70097": {
             "Name": "Krasnoludzki Hawierz",
-            "Info": "Rozmieszczenie: Wzmocnij się o 1 za każdego Krasnoluda w twojej ręce.",
+            "Info": "Rozmieszczenie: Ulepsz się o 1 za każdego Krasnoluda w twojej ręce.",
             "Flavor": "Który bęcwał gwiżdże w kopalni?!"
         },
         "70098": {
@@ -3727,7 +3727,7 @@
         },
         "70138": {
             "Name": "Troska driad",
-            "Info": "Zagraj Brązową lub Srebrną kartę z twojej talii, następnie wzmocnij ją o ilość driad po twojej stronie planszy.",
+            "Info": "Wybierz Brązową lub Srebrną kartę z twojej talii, następnie wzmocnij ją o liczbę driad po twojej stronie planszy i zagraj ją.",
             "Flavor": "Tsst, tsst, evelienn va maeth, elaine blath..."
         },
         "70139": {
