@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 128);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 129);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -15004,7 +15004,7 @@ namespace Cynthia.Card
                     Flavor = "快跑！那不是雪崩，是龙！",
                     Info = "选择一个友方吸血鬼，使其汲取一个敌方单位4点战力，若目标存活，则在右侧生成一个渴血鸟怪",
                     CardArtsId = "r9900000",
-                    LinkedCards=new List<String> {},
+                    LinkedCards=new List<String> {"70181"},
                 }
             },
             {
@@ -15097,9 +15097,9 @@ namespace Cynthia.Card
                 {
                     CardId ="70185", //Noon Wraith
                     Name="日间妖灵",
-                    Strength=4,
+                    Strength=14,
                     Group=Group.Copper,
-                    Faction = Faction.Neutral,
+                    Faction = Faction.Monsters,
                     CardUseInfo = CardUseInfo.MyRow,
                     CardType = CardType.Unit,
                     IsDoomed = false,
