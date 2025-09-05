@@ -6610,6 +6610,7 @@ GameObject:
   - component: {fileID: 377524190}
   - component: {fileID: 377524191}
   - component: {fileID: 377524192}
+  - component: {fileID: 377524193}
   m_Layer: 0
   m_Name: Code
   m_TagString: Untagged
@@ -6664,6 +6665,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Targets:
   - {fileID: 1617802060}
+--- !u!114 &377524193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377524189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b370594b2fd95a4385217ea9396922a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 2097593936}
+  submitButton: {fileID: 138314391}
 --- !u!1 &379522604
 GameObject:
   m_ObjectHideFlags: 0
@@ -6929,6 +6944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MatchmakingPassword
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311322928837743110, guid: b406008435f9d174e9f4e20bcc0b1140,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3311397089831750264, guid: b406008435f9d174e9f4e20bcc0b1140,
         type: 3}
@@ -25628,8 +25648,8 @@ MonoBehaviour:
     TextObject: {fileID: 725169987}
   - Id: TrinketsMenu_Trinkets
     TextObject: {fileID: 442945911}
-  - Id: TrinketsMenu_Trinkets
-    TextObject: {fileID: 442945911}
+  - Id: RegisterMenu_BackButton
+    TextObject: {fileID: 568418417}
 --- !u!1 &1362820516
 GameObject:
   m_ObjectHideFlags: 0
