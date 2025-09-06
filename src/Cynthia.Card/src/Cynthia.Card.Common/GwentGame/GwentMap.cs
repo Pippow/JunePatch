@@ -15013,7 +15013,7 @@ namespace Cynthia.Card
                 {
                     CardId ="70181", //Albastra Right Wing
                     Name="左翼",
-                    Strength=2,
+                    Strength=1,
                     Group=Group.Gold,
                     Faction = Faction.Neutral,
                     CardUseInfo = CardUseInfo.MyRow,
@@ -15023,7 +15023,7 @@ namespace Cynthia.Card
                     IsDerive = true,
                     Categories = new Categorie[]{ Categorie.Draconid,Categorie.Token},
                     Flavor = "快跑！那不是雪崩，是龙！",
-                    Info = "xxxx",
+                    Info = "2点护甲。",
                     CardArtsId = "r10300000",
                     LinkedCards=new List<String> {},
                 }
@@ -15034,7 +15034,7 @@ namespace Cynthia.Card
                 {
                     CardId ="70182", //Albastra Left Wing
                     Name="右翼",
-                    Strength=2,
+                    Strength=1,
                     Group=Group.Gold,
                     Faction = Faction.Neutral,
                     CardUseInfo = CardUseInfo.MyRow,
@@ -15044,7 +15044,7 @@ namespace Cynthia.Card
                     IsDerive = true,
                     Categories = new Categorie[]{ Categorie.Draconid,Categorie.Token},
                     Flavor = "快跑！那不是雪崩，是龙！",
-                    Info = "xxxx",
+                    Info = "2点护甲。",
                     CardArtsId = "r10200000",
                     LinkedCards=new List<String> {},
                 }
