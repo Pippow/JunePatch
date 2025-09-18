@@ -3255,7 +3255,7 @@
         },
         "70009": {
             "Name": "Fleder",
-            "Info": "Deploy: Summon a copy of this unit from your deck on its right.\nWhenever a Bronze or Silver enemy becomes Damaged, Boost self by 1.",
+            "Info": "Deploy: Summon a copy of this unit on its right.\nWhenever a Bronze or Silver enemy becomes Damaged, Boost self by 1.",
             "Flavor": "The children o' the night come as punishment from the gods! We's tolerated wizard-folk and non-human filth in our midst too long! Repent! 'Fore yer soul rots, repent!"
         },
         "70010": {
@@ -3605,7 +3605,7 @@
         },
         "70110": {
             "Name": "Knickers",
-            "Info": "On turn end, if this unit's Power is higher than the number of cards in your hand, Summon this unit from your deck.",
+            "Info": "On turn end, if this unit's Power is higher than the number of cards in your hand, Summon this unit.",
             "Flavor": "Leave it alone, Knickers! Damn it, leave it alone!"
         },
         "70111": {
