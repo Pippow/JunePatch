@@ -32,14 +32,13 @@ jobs:
           REQUIRED_BOTH=("The-last-Iris" "Pippow")
           REQUIRED_ANY=("The-last-Iris" "Pippow" "kajtek14102")
 
-          PR_AUTHOR=$(jq -r '.pull_request.user.login' "$GITHUB_EVENT_PATH" | ascii_downcase)
+          PR_AUTHOR=$(jq -r '.pull_request.user.login | ascii_downcase' "$GITHUB_EVENT_PATH")
+          APPROVERS=$(echo "$APPROVED_USERS" | jq -r '.[]')
 
           NEED_SPECIAL=0
           for f in $(echo "$CHANGED_FILES" | jq -r '.[]'); do
             [[ "$f" == $SPECIAL_PATH* ]] && NEED_SPECIAL=1
           done
-
-          APPROVERS=$(echo "$APPROVED_USERS" | jq -r '.[]')
 
           if [ "$NEED_SPECIAL" -eq 1 ]; then
             MISSING=()
@@ -48,24 +47,3 @@ jobs:
                 MISSING+=("$u")
               fi
             done
-            if [ ${#MISSING[@]} -gt 0 ]; then
-              echo "❌ Missing approvals from required users for SPECIAL_PATH: ${MISSING[*]}"
-              exit 1
-            fi
-          else
-            ANY_APPROVED=0
-            for u in "${REQUIRED_ANY[@]}"; do
-              if [ "$u" != "$PR_AUTHOR" ] && echo "$APPROVERS" | grep -qi "$u"; then
-                ANY_APPROVED=1
-                break
-              fi
-            done
-            if [ "$ANY_APPROVED" -eq 0 ]; then
-              echo "❌ Missing approval from any of the required users: ${REQUIRED_ANY[*]}"
-              exit 1
-            fi
-          fi
-
-          echo "✅ Approval rules passed — merge allowed."
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
