@@ -7,6 +7,8 @@ namespace Cynthia.Card
     {//Deploy: Spawn a Mirror Image on both sides of the row. On turn end, repeat deploy ability and transform into a Nightwraith.
         //部署：在所在排的双方生成一个“镜像”。在回合结束
         public NoonWraith(GameCard card) : base(card) { }
+        private int mystrength = 8;
+        private int myhealth = 0;
         public override async Task<int> CardPlayEffect(bool isSpying, bool isReveal)
         {
             //Spawn a Mirror Image on both sides of the row.
@@ -19,6 +21,8 @@ namespace Cynthia.Card
         {//On turn end, repeat deploy ability and transform into a Nightwraith.
             if (@event.PlayerIndex == Card.PlayerIndex && Card.Status.CardRow.IsOnPlace())
             {
+                mystrength = Card.Status.Strength;
+                myhealth = Card.Status.HealthStatus;
                 //On turn end, repeat deploy ability
                 await Game.CreateCardAtEnd(CardId.MirrorImage, PlayerIndex, Card.Status.CardRow);
                 await Game.CreateCardAtEnd(CardId.MirrorImage, AnotherPlayer, Card.Status.CardRow);
@@ -27,15 +31,11 @@ namespace Cynthia.Card
                 int Change = Power - Strength;
                 //and transform into a Nightwraith.
 
-                await Card.Effect.Transform(CardId.NightWraith, Card, x => x.Status.Strength = Strength, isForce: true);
-                if (Change>0)
+                await Card.Effect.Transform(CardId.NightWraith, Card, x =>
                 {
-                    await Boost_Quiet(Change, Card);
-                }
-                if (Change<0)
-                {
-                    await Lower_Power_By(-Change, Card);
-                }
+                    x.Status.Strength = mystrength;
+                    x.Status.HealthStatus = myhealth;
+                });
                 return;
 
             }
