@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 136);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 137);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -146,7 +146,7 @@ namespace Cynthia.Card
             { Categorie.Shapeshifter, "Shapeshifter" },
             { Categorie.Token, "Token" },
             { Categorie.Agent, "Agent" },
-            { Categorie.ClanBrokvar, "ClanBrovkar" },
+            { Categorie.ClanBrokvar, "ClanBrokvar" },
             { Categorie.Human, "Human" },
             { Categorie.Bomb, "Bomb" },
             { Categorie.Druid, "Druid" },
