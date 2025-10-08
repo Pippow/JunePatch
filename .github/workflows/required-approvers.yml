@@ -3,15 +3,25 @@ name: Check Approvers
 on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review, edited, review_requested, review_request_removed]
+  pull_request_review:
+    types: [submitted]
+
+# minimal read permissions (we only read files & reviews)
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
   check-approvers:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Get changed files
         run: |
+          set -euo pipefail
+          # store changed files as JSON array (safe for GITHUB_ENV)
           FILES=$(gh api repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files \
             --paginate --jq '.[].filename' | jq -R -s -c 'split("\n")[:-1]')
           echo "CHANGED_FILES=$FILES" >> $GITHUB_ENV
@@ -20,6 +30,8 @@ jobs:
 
       - name: Get approvals
         run: |
+          set -euo pipefail
+          # store lowercased unique approver logins as JSON array (can be empty array)
           USERS=$(gh api repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/reviews \
             --jq '[.[] | select(.state=="APPROVED") | .user.login] | unique | map(ascii_downcase)')
           echo "APPROVED_USERS=$USERS" >> $GITHUB_ENV
@@ -28,39 +40,73 @@ jobs:
 
       - name: Enforce approval rules
         run: |
+          set -euo pipefail
+
+          # ---- configuration ----
           SPECIAL_PATH="src/Cynthia.Card/src/Cynthia.Card.Common/CardEffects"
-          REQUIRED_BOTH=("The-last-Iris" "Pippow")
-          REQUIRED_ANY=("The-last-Iris" "Pippow" "kajtek14102")
+          REQUIRED_BOTH=("The-last-Iris" "Pippow")                # if SPECIAL_PATH touched -> require BOTH
+          REQUIRED_ANY=("The-last-Iris" "Pippow" "kajtek14102")  # if not -> require ANY of these
+          # -----------------------
 
+          # runtime values (lowercased)
           PR_AUTHOR=$(jq -r '.pull_request.user.login | ascii_downcase' "$GITHUB_EVENT_PATH")
-          APPROVERS=$(echo "$APPROVED_USERS" | jq -r '.[]')
+          APPROVERS=$(echo "${APPROVED_USERS:-[]}" | jq -r '.[]' 2>/dev/null || true)
 
+          # detect whether SPECIAL_PATH is touched
           NEED_SPECIAL=0
-          for f in $(echo "$CHANGED_FILES" | jq -r '.[]'); do
-            [[ "$f" == $SPECIAL_PATH* ]] && NEED_SPECIAL=1
+          for f in $(echo "$CHANGED_FILES" | jq -r '.[]' 2>/dev/null || true); do
+            if [[ "$f" == $SPECIAL_PATH* ]]; then
+              NEED_SPECIAL=1
+              break
+            fi
           done
 
+          # helper: is_approved <login_lowercase>
+          is_approved() {
+            local login_lc="$1"
+            if [ -z "$APPROVERS" ]; then
+              return 1
+            fi
+            # match whole line (exact match)
+            echo "$APPROVERS" | grep -x -i -q "$login_lc"
+          }
+
           if [ "$NEED_SPECIAL" -eq 1 ]; then
+            # require BOTH required users, but if PR author is in the required list,
+            # treat them as already satisfied.
             MISSING=()
             for u in "${REQUIRED_BOTH[@]}"; do
-              if [ "$u" != "$PR_AUTHOR" ] && ! echo "$APPROVERS" | grep -qi "$u"; then
+              u_lc=$(echo "$u" | tr '[:upper:]' '[:lower:]')
+              if [ "$u_lc" = "$PR_AUTHOR" ]; then
+                # author counts as approved
+                continue
+              fi
+              if ! is_approved "$u_lc"; then
                 MISSING+=("$u")
               fi
             done
+
             if [ ${#MISSING[@]} -gt 0 ]; then
-              echo "❌ Missing approvals from required users for SPECIAL_PATH: ${MISSING[*]}"
+              echo "❌ Missing approvals (SPECIAL_PATH): ${MISSING[*]}"
               exit 1
             fi
           else
-            ANY_APPROVED=0
+            # non-special: require ANY of REQUIRED_ANY, author counts
+            ANY_OK=0
             for u in "${REQUIRED_ANY[@]}"; do
-              if [ "$u" != "$PR_AUTHOR" ] && echo "$APPROVERS" | grep -qi "$u"; then
-                ANY_APPROVED=1
+              u_lc=$(echo "$u" | tr '[:upper:]' '[:lower:]')
+              if [ "$u_lc" = "$PR_AUTHOR" ]; then
+                ANY_OK=1
+                break
+              fi
+              if is_approved "$u_lc"; then
+                ANY_OK=1
                 break
               fi
             done
-            if [ "$ANY_APPROVED" -eq 0 ]; then
-              echo "❌ Missing approval from any of the required users: ${REQUIRED_ANY[*]}"
+
+            if [ "$ANY_OK" -eq 0 ]; then
+              echo "❌ Missing approval: one of ${REQUIRED_ANY[*]} must approve"
               exit 1
             fi
           fi
