@@ -48,7 +48,7 @@ namespace Cynthia.Card.Server
             _gwentCardDataService = gwentCardDataService;
             _gwentLocalizationService = gwentLocalizationService;
             UpdateAndSaveSeasons();
-            CreatePlayersStreaksFromGameResults(minDate: new DateTime(2025, 6, 23, 0, 0, 0, DateTimeKind.Utc));
+            CreatePlayersStreaksFromGameResults(minDate: new DateTime(2025, 10, 23, 0, 0, 0, DateTimeKind.Utc));
             
         }
 
@@ -77,7 +77,7 @@ namespace Cynthia.Card.Server
             foreach (var gameresult in results)
             {
 
-                if (!gameresult.IsEffective())
+                if (!gameresult.IsEffective() || !gameresult.isRanked)
                     continue;
 
                 if (maxDate.HasValue && gameresult.Time > maxDate)
@@ -282,7 +282,7 @@ namespace Cynthia.Card.Server
                     }
                 }
 
-                await SendSeasonEndMessage(player.PlayerName, avatarRewards, borderRewards, titleRewards, player.MMR, rank, GetSeasonData().Item1);
+                await SendSeasonEndMessage(player.PlayerName, avatarRewards, borderRewards, titleRewards, player.MMR, rank, GetSeasonData().SeasonName);
             }
 
             return true;
@@ -729,7 +729,7 @@ namespace Cynthia.Card.Server
         public async Task<string> GetLatestVersion(string connectionId)
         {
             await Task.CompletedTask;
-            return "2.1.4";
+            return "2.1.5";
         }
 
         public async Task<string> GetNotes(string connectionId)
@@ -982,7 +982,7 @@ When other players are available, player matchmaking will be prioritized. Add #f
         public async Task<string> GetLatestClientVersion(string connectionId)
         {
             await Task.CompletedTask;
-            return @"2.1.4";
+            return @"2.1.5";
         }
         //-------------------------------------------------------------------------
         public int GetUserCount()
@@ -1033,7 +1033,7 @@ When other players are available, player matchmaking will be prioritized. Add #f
             string rank = null;
             string ranktitle = null;
             string rankavatar = null; // for seasonal avatars
-            int seasonId = _databaseService.QuerySeasonData().Item4;
+            int seasonId = _databaseService.QuerySeasonData().SeasonId;
             switch (mymmr)
             {
                 case int i when i < 3500:
@@ -1281,7 +1281,7 @@ When other players are available, player matchmaking will be prioritized. Add #f
 
         public int[] GetPlayernameStreak(string playername) => _databaseService.QueryStreak(playername);
 
-        public Tuple<string, DateTime, string, int, string> GetSeasonData(bool active = true, int id = 0) => _databaseService.QuerySeasonData(active, id);
+        public SeasonInfo GetSeasonData(bool active = true, int id = 0) => _databaseService.QuerySeasonData(active, id);
         public IList<string> GetUserMessages(string playername) => _databaseService.QueryUserMessages(playername);
         public Task<bool> RemoveUserMessage(string username, int messageId) => _databaseService.RemoveUserMessage(username, messageId);
         public IList<SeasonReward> GetSeasonRewards(int seasonID, string type = "all") => _databaseService.QuerySeasonRewards(seasonID, type);
