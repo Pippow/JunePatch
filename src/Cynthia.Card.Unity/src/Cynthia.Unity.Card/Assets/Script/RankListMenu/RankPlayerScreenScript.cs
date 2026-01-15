@@ -53,6 +53,7 @@ public class RankPlayerScreenScript : MonoBehaviour
     public Image FactionBackgroundLogo;
     public Text peakMMR;
     public Text PlayerTitle;
+    public GameObject FactionBars;
 
     private Dictionary<int, List<Tuple<string, int>>> factionsRanks;
 
@@ -78,6 +79,17 @@ public class RankPlayerScreenScript : MonoBehaviour
         };
     }
 
+    private void Start()
+    {
+        var _streakTexts = new List<Text> { AllFactionsStreak, MonstersStreak, NilfgaardStreak, NorthernRealmsStreak, ScoiataelStreak, SkelligeStreak };
+        float _outline = 1.6f;
+        foreach (var _textObject in _streakTexts)
+        {
+            _textObject.color = new Color(1.0f, 0.854f, 0.325f, 1.0f);
+            _textObject.GetComponent<Outline>().effectDistance = new Vector2(_outline, -_outline);
+        }
+
+    }
     public void SetPlayerInfo(string avatar, string border, string nickname, string title, int mmr, int bestMMR, IList<int[]> statsFactions, int rankNumber, Dictionary<int, List<Tuple<string, int>>> factionsRankings)
     {
         factionsRanks = factionsRankings;
@@ -199,36 +211,40 @@ public class RankPlayerScreenScript : MonoBehaviour
         }
 
 
-        AllFactionsStreak.text = $"{totalgames[0]} - {totalgames[2]} - {totalgames[1]}";
+        AllFactionsStreak.text = $"{totalgames[0]}  -  {totalgames[2]}  -  {totalgames[1]}";
         AllFactionsLabel.text = games > 0 ? $"{_translator.GetText("Faction_ALL")} {_translator.GetText("Leaderboard_Games")}: {games} ({((float)totalgames[0] / (float)games) * 100:F2}%)" : $"{_translator.GetText("Faction_ALL")} {_translator.GetText("Leaderboard_Games")}: {games}";
 
         int _factionGames = statsFactions[0].Sum();
         int _factionWins = statsFactions[0][0];
 
-        MonstersStreak.text =  $"{statsFactions[0][0]} - {statsFactions[0][2]} - {statsFactions[0][1]}";
+        MonstersStreak.text = $"{statsFactions[0][0]}  -  {statsFactions[0][2]}  -  {statsFactions[0][1]}";
         MonstersLabel.text = _factionGames > 0 ? $"{_translator.GetText("Faction_MO")} {_translator.GetText("Leaderboard_Games")}: {_factionGames} ({((float)_factionWins / (float)_factionGames) * 100:F2}%)" : $"{_translator.GetText("Faction_MO")} {_translator.GetText("Leaderboard_Games")}: {_factionGames}";
 
         _factionGames = statsFactions[1].Sum();
         _factionWins = statsFactions[1][0];
-        NilfgaardStreak.text =  $"{statsFactions[1][0]} - {statsFactions[1][2]} - {statsFactions[1][1]}";
+        NilfgaardStreak.text = $"{statsFactions[1][0]}  -  {statsFactions[1][2]}  -  {statsFactions[1][1]}";
+        NilfgaardStreak.color = new Color(1.0f, 0.854f, 0.325f, 1.0f);
         NilfgaardLabel.text = _factionGames > 0 ? $"{_translator.GetText("Faction_NG")} {_translator.GetText("Leaderboard_Games")}: {_factionGames} ({((float)_factionWins / (float)_factionGames) * 100:F2}%)" : $"{_translator.GetText("Faction_NG")} {_translator.GetText("Leaderboard_Games")}: {_factionGames}";
 
         _factionGames = statsFactions[2].Sum();
         _factionWins = statsFactions[2][0];
-        NorthernRealmsStreak.text =  $"{statsFactions[2][0]} - {statsFactions[2][2]} - {statsFactions[2][1]}";
+        NorthernRealmsStreak.text = $"{statsFactions[2][0]}  -  {statsFactions[2][2]}  -  {statsFactions[2][1]}";
+        NorthernRealmsStreak.color = new Color(1.0f, 0.854f, 0.325f, 1.0f);
         NorthernRealmsLabel.text = _factionGames > 0 ? $"{_translator.GetText("Faction_NR")} {_translator.GetText("Leaderboard_Games")}: {_factionGames} ({((float)_factionWins / (float)_factionGames) * 100:F2}%)" : $"{_translator.GetText("Faction_NR")} {_translator.GetText("Leaderboard_Games")}: {_factionGames}";
 
         _factionGames = statsFactions[3].Sum();
         _factionWins = statsFactions[3][0];
-        ScoiataelStreak.text =  $"{statsFactions[3][0]} - {statsFactions[3][2]} - {statsFactions[3][1]}";
+        ScoiataelStreak.text = $"{statsFactions[3][0]}  -  {statsFactions[3][2]}  -  {statsFactions[3][1]}";
+        ScoiataelStreak.color = new Color(1.0f, 0.854f, 0.325f, 1.0f);
         ScoiataelLabel.text = _factionGames > 0 ? $"{_translator.GetText("Faction_ST")} {_translator.GetText("Leaderboard_Games")}: {_factionGames} ({((float)_factionWins / (float)_factionGames) * 100:F2}%)" : $"{_translator.GetText("Faction_ST")} {_translator.GetText("Leaderboard_Games")}: {_factionGames}";
 
         _factionGames = statsFactions[4].Sum();
         _factionWins = statsFactions[4][0];
-        SkelligeStreak.text = $"{statsFactions[4][0]} - {statsFactions[4][2]} - {statsFactions[4][1]}";
+        SkelligeStreak.text = $"{statsFactions[4][0]}  -  {statsFactions[4][2]}  -  {statsFactions[4][1]}";
         SkelligeLabel.text = _factionGames > 0 ? $"{_translator.GetText("Faction_SK")} {_translator.GetText("Leaderboard_Games")}: {_factionGames} ({((float)_factionWins / (float)_factionGames) * 100:F2}%)" : $"{_translator.GetText("Faction_SK")} {_translator.GetText("Leaderboard_Games")}: {_factionGames}";
+        SkelligeStreak.color = new Color(1.0f, 0.854f, 0.325f, 1.0f);
 
-
+        LayoutRebuilder.ForceRebuildLayoutImmediate(FactionBars.GetComponent<RectTransform>());
     }
 
     private void SetBar(string faction, string type, float value)
@@ -263,6 +279,9 @@ public class RankPlayerScreenScript : MonoBehaviour
         var players = FactionRankList.transform.GetChild(2);
 
         int myNickIndex = -1;
+        int my_i = -1;
+        int loggedNickIndex = -1;
+        int logged_i = -1;
 
         for (int i = 1; i < players.transform.childCount - 1; i++)
         {
@@ -275,29 +294,36 @@ public class RankPlayerScreenScript : MonoBehaviour
             players.transform.GetChild(i).GetChild(3).GetComponent<Text>().text = $"{playerData.Item2}";
             if (myNickname == playerData.Item1)
             {
-                Color tintColor = new Color(1f, 0.455f, 0.027f, 1.0f);
-                if (myNickname == _clientService.User.PlayerName)
-                {
-                    tintColor = new Color(0.976f, 1.0f, 0.027f, 1.0f);
-                }
-                players.transform.GetChild(i).GetChild(1).GetComponent<Text>().color = tintColor;
-                players.transform.GetChild(i).GetChild(2).GetComponent<Text>().color = tintColor;
-                players.transform.GetChild(i).GetChild(3).GetComponent<Text>().color = tintColor;
                 myNickIndex = ranksIndex;
+                my_i = i;
             }
-            else
-            {
+            if (_clientService.User.PlayerName == playerData.Item1){
+                loggedNickIndex = ranksIndex;
+                logged_i = i; 
+            }
                 players.transform.GetChild(i).GetChild(1).GetComponent<Text>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                 players.transform.GetChild(i).GetChild(2).GetComponent<Text>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                 players.transform.GetChild(i).GetChild(3).GetComponent<Text>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
-            }
         }
-        
 
-
+        if (loggedNickIndex != -1)
+        {
+            Color tintColor = new Color(0.993f, 0.785f, 0.135f, 1.0f);
+            players.transform.GetChild(logged_i).GetChild(1).GetComponent<Text>().color = tintColor;
+            players.transform.GetChild(logged_i).GetChild(2).GetComponent<Text>().color = tintColor;
+            players.transform.GetChild(logged_i).GetChild(3).GetComponent<Text>().color = tintColor;
+        }
+        if(myNickIndex != -1 && myNickIndex != loggedNickIndex)
+        {
+            Color tintColor = new Color(1f, 0.455f, 0.027f, 1.0f);
+            players.transform.GetChild(my_i).GetChild(1).GetComponent<Text>().color = tintColor;
+            players.transform.GetChild(my_i).GetChild(2).GetComponent<Text>().color = tintColor;
+            players.transform.GetChild(my_i).GetChild(3).GetComponent<Text>().color = tintColor;
+        }
         if (myNickIndex == -1)
         {
             players.GetChild(11).gameObject.SetActive(true);
+            
             int _factionRankPosition = factionsRanks[buttonid].FindIndex(t => t.Item1 == myNickname) + 1;
             players.transform.GetChild(11).GetChild(1).GetComponent<Text>().text = $"#{_factionRankPosition}";
             players.transform.GetChild(11).GetChild(2).GetComponent<Text>().text = $"{factionsRanks[buttonid][_factionRankPosition - 1].Item1}";
@@ -319,6 +345,8 @@ public class RankPlayerScreenScript : MonoBehaviour
         LayoutRebuilder.ForceRebuildLayoutImmediate(FactionRankList.GetComponent<RectTransform>());
 
         players.gameObject.GetComponent<Canvas>().sortingOrder = 2;
+
+
     }
 
     private void CloseFactionRankList()
