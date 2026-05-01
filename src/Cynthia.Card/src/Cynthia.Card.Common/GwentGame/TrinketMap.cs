@@ -1424,15 +1424,6 @@ namespace Cynthia.Card
                 }
             },
             {
-                "WHITEWOLF",
-                new Title()
-                {
-                    ID = "WHITEWOLF",
-                    IsReleased = false,
-                    TitleColor = "lightblue",
-                }
-            },
-            {
                 "VOLUNTEER",
                 new Title()
                 {
