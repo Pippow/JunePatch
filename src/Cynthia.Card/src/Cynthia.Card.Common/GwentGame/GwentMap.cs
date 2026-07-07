@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 150);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 151);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -12106,7 +12106,7 @@ namespace Cynthia.Card
                     Faction = Faction.Neutral,
                     CardUseInfo = CardUseInfo.MyRow,
                     CardType = CardType.Unit,
-                    IsDoomed = false,
+                    IsDoomed = true,
                     IsCountdown = false,
                     IsDerive = false,
                     Categories = new Categorie[]{ Categorie.Mage},
@@ -13802,7 +13802,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[]{ Categorie.ClanHeymaey},
                     Flavor = "在危难关头，圣母弗蕾雅于欧特克尔的船上现身，传授他平息风暴的方法。她早已知晓，欧特克尔将像他的兄弟一样，谱写一段更为宏大的传奇。",
-                    Info = "使对方场上的“倾盆大雨”和“史凯利杰风暴”伤害提升1点。",
+                    Info = "使对方场上的“倾盆大雨”和“史凯利杰风暴”伤害提升2点。",
                     CardArtsId = "c10001000",
                     LinkedCards=new List<String> {"14019"},
                 }
@@ -14028,12 +14028,12 @@ namespace Cynthia.Card
                     Faction = Faction.Skellige,
                     CardUseInfo = CardUseInfo.MyRow,
                     CardType = CardType.Unit,
-                    IsDoomed = false,
+                    IsDoomed = true,
                     IsCountdown = false,
                     IsDerive = false,
-                    Categories = new Categorie[]{ },
+                    Categories = new Categorie[]{Categorie.Druid},
                     Flavor = "有些乌鸦会说人话。而有些人，学会了乌鸦的语言。",
-                    Info = "生成3只乌鸦。复活所有战力不高于2的乌鸦，并使其获得佚亡。",
+                    Info = "生成2只乌鸦。复活所有战力不高于2的乌鸦。",
                     CardArtsId = "202514",
                     LinkedCards=new List<String> {"70136"},
                 }
@@ -14073,7 +14073,7 @@ namespace Cynthia.Card
                     IsDoomed = false,
                     IsCountdown = false,
                     IsDerive = false,
-                    Categories = new Categorie[]{ },
+                    Categories = new Categorie[]{Categorie.Druid},
                     Flavor = "先贤声称动物愚昧无知——纯属胡说八道。",
                     Info = "回合结束时，若同排没有乌鸦，则在右侧生成一个乌鸦。",
                     CardArtsId = "202517",

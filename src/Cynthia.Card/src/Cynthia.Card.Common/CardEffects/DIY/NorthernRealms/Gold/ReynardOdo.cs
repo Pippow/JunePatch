@@ -13,7 +13,6 @@ namespace Cynthia.Card
 
 
         public ReynardOdo(GameCard card) : base(card) { }
-
         public override async Task<int> CardUseEffect()
         {
             await Card.Effect.SetCountdown(value: 3);
@@ -29,10 +28,10 @@ namespace Cynthia.Card
             {   
                 await Card.Effect.Armor(Card.Status.HealthStatus, Card);
                 await Card.Effect.Reset(Card);
-                var boostlist = Game.RowToList(Card.PlayerIndex, Card.Status.CardRow).IgnoreConcealAndDead().Where(x => x.Status.CardRow.IsOnPlace()).ToList();;
+                var boostlist = Game.RowToList(Card.PlayerIndex, Card.Status.CardRow).IgnoreConcealAndDead().Where(x => x.Status.CardRow.IsOnPlace() && x != Card).ToList();;
                 foreach (var card in boostlist)
                 {
-                    await card.Effect.Boost(1, Card);
+                    await card.Effect.Boost(2, Card);
                 }
                 await Card.Effect.SetCountdown(offset: -1);
                 return;
