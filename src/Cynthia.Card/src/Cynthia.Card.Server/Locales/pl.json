@@ -4073,7 +4073,7 @@
         },
         "70175": {
             "Name": "Zasadzka Długoszczura",
-            "Info": "Wezwij kopię tej jednostki do tego rzędu kiedy zostanie aktywowana sojusznicza zasadzka. ",
+            "Info": "Wybierz rząd przeciwnika. Jeśli zawiera mniej niż 4 jednostki, przenieś na ten rząd jego najsilniejszych sojuszników aż do osiągnięcia 4 jednostek. Jeśli ma więcej niż 4 jednostki, przenieś najsłabszych sojuszników z tego rzędu na losowe rzędy tak, aby zostały tam 4 jednostki. Każda przeniesiona karta otrzymuje 2 punkty obrażeń.",
             "Flavor": "Z nimi zawsze to samo: aaach, nie czuję nóg!. Ale żeby ktokolwiek docenił rzemiosło... Czy proszę o tak wiele?"
         },
         "70176": {
@@ -4093,7 +4093,7 @@
         },
         "70179": {
             "Name": "Królowa Calanthe",
-            "Info": "Rozmieszczenie: Zagraj najsłabszą nie Złotą jednostkę z Twojej talii, następnie przetasuj nie Złotego sojusznika do Twojej talii bez zmiany jego siły.",
+            "Info": "Rozmieszczenie: Wtasuj innego niż złotego sojusznika do talii bez zmieniania jego siły, następnie zagraj najsłabszą inną niż złota jednostkę z talii.",
             "Flavor": "Zwano ją Lwicą. Nie bez powodu."
         },
         "70180": {
