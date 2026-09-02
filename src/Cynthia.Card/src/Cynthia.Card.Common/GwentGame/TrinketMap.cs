@@ -9,7 +9,7 @@ namespace Cynthia.Card
     public static class TrinketMap
     {
         //
-        public static Version TrinketMapVersion { get; } = new Version(1, 0, 0, 10);
+        public static Version TrinketMapVersion { get; } = new Version(1, 0, 0, 11);
 
         /// <summary>
         /// Releases all trinkets (avatars, borders, titles) referenced by the given seasonal rewards.
@@ -1304,15 +1304,6 @@ namespace Cynthia.Card
                     ID = "SKELLIGER",
                     IsReleased = true,
                     TitleColor = "purple",
-                }
-            },
-            {
-                "DRAGONSLAYER",
-                new Title()
-                {
-                    ID = "DRAGONSLAYER",
-                    IsReleased = true,
-                    TitleColor = "orange",
                 }
             },
             {
