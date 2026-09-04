@@ -534,6 +534,8 @@ namespace Cynthia.Card.Server
                 await ClientDelay(300, myPlayerIndex);
                 //88888888888888888888888888888888888888888888888888888
                 await SendEvent(new AfterPlayerDraw(myPlayerIndex, drawcard, null));
+                await SendOperactionList();
+                await SendSpectatorSetCard(drawcard);
                 //88888888888888888888888888888888888888888888888888888
             }
             return list;
@@ -614,6 +616,7 @@ namespace Cynthia.Card.Server
                 //每次调度
                 //立刻推送消息
                 await SendOperactionList();
+                await SendSpectatorSetCard(card);
             }
             //++++++++++++++++++++++++++++++++++++++++
             //将黑名单卡池中所有卡牌随机插入到卡组中
@@ -1425,6 +1428,18 @@ namespace Cynthia.Card.Server
             );
         }
 
+        private Task SendSpectatorSetCard(GameCard card)
+        {
+            var location = GetCardLocation(Player1Index, card);
+            var spectatorTasks = ViewList.Select(viewer => viewer.SendAsync
+            (
+                ServerOperationType.SetCard,
+                location,
+                card.Status
+            ));
+            return Task.WhenAll(spectatorTasks);
+        }
+
         public async Task ShowCardMove(CardLocation location, GameCard card, bool refresh = true, bool refreshPoint = false, bool isShowEnemyBack = false, bool autoUpdateCemetery = true, bool autoUpdateDeck = true)
         {
             var isFromHide = card.Status.CardRow.IsInBack();
@@ -1452,8 +1467,9 @@ namespace Cynthia.Card.Server
 
         public async Task ShowSetCard(GameCard card)//更新敌我的一个卡牌
         {
-            if (!card.Status.CardRow.IsOnRow()) return;
-            await Task.WhenAll(SendSetCard(Player1Index, card), SendSetCard(Player2Index, card));
+            if (card.Status.CardRow.IsOnRow())
+                await Task.WhenAll(SendSetCard(Player1Index, card), SendSetCard(Player2Index, card));
+            await SendSpectatorSetCard(card);
         }
         public async Task ShowCardDown(GameCard card)//落下
         {
