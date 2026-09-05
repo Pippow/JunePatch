@@ -1041,7 +1041,11 @@ namespace Cynthia.Card.Server
             var player1Task = SetDeckInfo(Player1Index);
             var player2Task = SetDeckInfo(Player2Index);
             // Send deck info to all spectators
-            var spectatorTasks = ViewList.Select(viewer => viewer.SendAsync(ServerOperationType.SetMyDeck, PlayersDeck[Player1Index].Select(x => x.Status).OrderBy(x => x.CardId).OrderByDescending(x => x.Group).ThenByDescending(x => x.Strength).ToList()));
+            var spectatorTasks = ViewList.SelectMany(viewer => new[]
+            {
+                viewer.SendAsync(ServerOperationType.SetMyDeck, PlayersDeck[Player1Index].Select(x => x.Status).OrderBy(x => x.CardId).OrderByDescending(x => x.Group).ThenByDescending(x => x.Strength).ToList()),
+                viewer.SendAsync(ServerOperationType.SetEnemyDeck, PlayersDeck[Player2Index].Select(x => x.Status).OrderBy(x => x.CardId).OrderByDescending(x => x.Group).ThenByDescending(x => x.Strength).ToList())
+            });
             await Task.WhenAll(new[] { player1Task, player2Task }.Concat(spectatorTasks));
         }
         public Task SetCemeteryInfo(int playerIndex)
@@ -1910,6 +1914,7 @@ namespace Cynthia.Card.Server
             
             // Send deck information for both players
             await viewer.SendAsync(ServerOperationType.SetMyDeck, PlayersDeck[Player1Index].Select(x => x.Status).OrderBy(x => x.CardId).OrderByDescending(x => x.Group).ThenByDescending(x => x.Strength).ToList());
+            await viewer.SendAsync(ServerOperationType.SetEnemyDeck, PlayersDeck[Player2Index].Select(x => x.Status).OrderBy(x => x.CardId).OrderByDescending(x => x.Group).ThenByDescending(x => x.Strength).ToList());
             
             // Send cemetery information for both players
             await viewer.SendAsync(ServerOperationType.SetMyCemetery, PlayersCemetery[Player1Index].Select(x => x.Status).ToList());
