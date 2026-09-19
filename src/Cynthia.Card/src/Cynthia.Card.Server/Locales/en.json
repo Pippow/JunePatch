@@ -2994,7 +2994,7 @@
         },
         "62001": {
             "Name": "Olaf",
-            "Info": "Deploy: Deal 12 Damage to self.\nReduce the Damage inflicted by 2 for each Beast you played this match.",
+            "Info": "Deploy: Deal [[damage]] Damage to self.\nReduce the Damage inflicted by 2 for each Beast you played this match.",
             "Flavor": "10-time winner of the venerable title of Champion of the An Skellig Arena."
         },
         "62002": {

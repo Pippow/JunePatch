@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Cynthia.Card
 {
     public class CardStatus
@@ -40,6 +42,7 @@ namespace Cynthia.Card
         private int? _crewCount;
         private bool? _isConcealCard;
         public GwentCard CardInfo { get; set; }
+        public IDictionary<string, int> InfoValues { get; set; } = new Dictionary<string, int>();
         public string CardId { get; set; }
         public string CardArtsId { get => _cardArtId ?? CardInfo.CardArtsId; set => _cardArtId = value; }
         public Group Group { get => _group ?? CardInfo.Group; set => _group = value; }

@@ -2993,7 +2993,7 @@
         },
         "62001": {
             "Name": "Olaf",
-            "Info": "Rozmieszczenie: Zadaj 12 pkt obrażeń tej jednostce. Zmniejsz zadane jej obrażenia o 2 za każdą Bestię zagraną przez ciebie podczas tej gry.",
+            "Info": "Rozmieszczenie: Zadaj [[damage]] pkt obrażeń tej jednostce. Zmniejsz zadane jej obrażenia o 2 za każdą Bestię zagraną przez ciebie podczas tej gry.",
             "Flavor": "Dziesięciokrotny zdobywca zaszczytnego tytułu czempiona areny na An Skellig."
         },
         "62002": {

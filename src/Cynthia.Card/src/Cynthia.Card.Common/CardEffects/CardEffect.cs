@@ -24,6 +24,10 @@ namespace Cynthia.Card
         public RowPosition MyRow { get => Card.Status.CardRow; }
         public int Countdown { get => Card.Status.Countdown; }
         public Random RNG { get => Game.RNG; }
+        protected void UpdateDescription(string key, int value)
+        {
+            Card.Status.InfoValues[key] = value;
+        }
         public async Task SetCountdown(int? value = default, int? offset = default)
         {
             Card.Status.Countdown = (value ?? Card.Status.Countdown) + (offset ?? 0);
