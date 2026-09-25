@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 159);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 160);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -15280,6 +15280,48 @@ namespace Cynthia.Card
                     Info = "从牌组中丢弃1张铜色“家族”单位牌，随后复活1个相同“家族”的非同名铜色单位。",
                     CardArtsId = "202620",
                     LinkedCards=new List<String> {},
+                }
+            },
+            {
+                "70194",//ElderLeetch
+                new GwentCard()
+                {
+                    CardId ="70194",
+                    Name="莱奇长老",
+                    Strength=8,
+                    Group=Group.Copper,
+                    Faction = Faction.Monsters,
+                    CardUseInfo = CardUseInfo.MyRow,
+                    CardType = CardType.Unit,
+                    Countdown = 2,
+                    IsDoomed = false,
+                    IsCountdown = true,
+                    IsDerive = false,
+                    Categories = new Categorie[]{ Categorie.Relict},
+                    Flavor = "",
+                    Info = "每2个回合结束时，如果它没有自我毁灭，则将这个单位的基本力量减半，然后在这一行生成一个基本力量相同的副本。",
+                    CardArtsId = "202996",
+                }
+            },
+            {
+                "70195",//ElderLeetchHalf
+                new GwentCard()
+                {
+                    CardId ="70195",
+                    Name="莱奇长老",
+                    Strength=8,
+                    Group=Group.Copper,
+                    Faction = Faction.Monsters,
+                    CardUseInfo = CardUseInfo.MyRow,
+                    CardType = CardType.Unit,
+                    Countdown = 2,
+                    IsDoomed = false,
+                    IsCountdown = true,
+                    IsDerive = true,
+                    Categories = new Categorie[]{ Categorie.Relict},
+                    Flavor = "",
+                    Info = "每2个回合结束时，如果它没有自我毁灭，则将这个单位的基本力量减半，然后在这一行生成一个基本力量相同的副本。",
+                    CardArtsId = "202996",
                 }
             },
         };

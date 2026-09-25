@@ -672,6 +672,8 @@ namespace Cynthia.Card
         public const string OphelieVanMoorlehem = "70191";
         public const string VlodimirvonEverec = "70192";
         public const string SkjordalDrummond = "70193";
+        public const string ElderLeetch = "70194";
+        public const string ElderLeetchHalf = "70195";
 
     }
 }
